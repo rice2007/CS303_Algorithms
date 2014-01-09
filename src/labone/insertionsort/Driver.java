@@ -1,8 +1,5 @@
 package labone.insertionsort;
 
-/**
- * Created by Ajay on 1/8/14.
- */
 public class Driver {
 
     public static void main(String[] args) {
@@ -14,21 +11,23 @@ public class Driver {
             for (int i = 0; i < array.length; i++) {
                 array[i] = (int) (Math.random() * n + 1);
             }
-            key = (int) (Math.random() * Math.pow(2, power) + 1);
-            System.out.println("The key on iteration " + (power - 1) + " is "
+            key = (int) (Math.random() * (Math.pow(2, power) + 1));
+            System.out.println("The key on iteration " + power + " is "
                     + key + ".");
 
-            System.out.println(timeInitial = System.currentTimeMillis());
+            timeInitial = System.currentTimeMillis();
+            System.out.println("timeInitial: " + timeInitial);
             InsertionSort.linearSearch(array, key);
 
-            System.out.println(timeInitial = System.currentTimeMillis());
+            timeInitial = System.currentTimeMillis();
+            System.out.println("timeInitial: " + timeInitial);
             InsertionSort.insertionSort(array);
             InsertionSort.binarySearch(array, key, 0, (n - 1));
             System.out.println();
         }
     }
-    protected static long timeInitial;
-    protected static long timeFinal;
-    protected static long timeElapsed;
+    static long timeInitial;
+    static long timeFinal;
+    static long timeElapsed;
     protected static final long MILLI_TO_BASE = 1000;
 }
