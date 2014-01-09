@@ -53,13 +53,13 @@ public class InsertionSort {
         int key;
         int i;
         for (int j = 1; j < array.length; j++) {
-            i = j;
-            while(i > 0 && array[i - 1] > array[i]) {
-                key = array[i];
-                array[i] = array[i - 1];
-                array[i - 1] = key;
+            key = array[j];
+            i = j - 1;
+            while(i >= 0 && array[i - 1] > key) {
+                array[i + 1] = array[i];
                 i--;
             }
+            array[i + 1] = key
         }
         return;
     }
