@@ -25,6 +25,14 @@ public class Driver {
             InsertionSort.binarySearch(array, key, 0, (n - 1));
             System.out.println();
         }
+        n = 1000;
+        int[] unsorted = new int[1000];
+        while(n >= 0) {
+            unsorted[n] = n;
+            n--
+        }
+        InsertionSort.linearSearch(unsorted);
+        InsertionSort.binnarySearch(unsorted, key, 0, (n-1));
     }
     static long timeInitial;
     static long timeFinal;
