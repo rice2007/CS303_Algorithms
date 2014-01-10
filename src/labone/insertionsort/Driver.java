@@ -15,24 +15,25 @@ public class Driver {
             System.out.println("The key on iteration " + power + " is "
                     + key + ".");
 
+            InsertionSort.insertionSort(array);
+
             timeInitial = System.currentTimeMillis();
             System.out.println("timeInitial: " + timeInitial);
             InsertionSort.linearSearch(array, key);
 
             timeInitial = System.currentTimeMillis();
             System.out.println("timeInitial: " + timeInitial);
-            InsertionSort.insertionSort(array);
             InsertionSort.binarySearch(array, key, 0, (n - 1));
             System.out.println();
         }
         n = 1000;
-        int[] unsorted = new int[1000];
-        while(n >= 0) {
-            unsorted[n] = n;
-            n--
+        int[] unsorted = new int[n];
+        for (int i = n - 1; i <= 0; i--) {
+            unsorted[n] = i;
         }
-        InsertionSort.linearSearch(unsorted);
-        InsertionSort.binnarySearch(unsorted, key, 0, (n-1));
+        key = (int) (Math.random() * (n +1));
+        InsertionSort.linearSearch(unsorted, key);
+        InsertionSort.binarySearch(unsorted, key, 0, (n-1));
     }
     static long timeInitial;
     static long timeFinal;

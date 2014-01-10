@@ -59,7 +59,7 @@ public class InsertionSort {
                 array[i + 1] = array[i];
                 i--;
             }
-            array[i + 1] = key
+            array[i + 1] = key;
         }
         return;
     }
