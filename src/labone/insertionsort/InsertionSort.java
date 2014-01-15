@@ -1,35 +1,34 @@
 package labone.insertionsort;
 
+import static labone.insertionsort.Driver.*;
+
 public class InsertionSort {
 	
 	public static void linearSearch(int[] array, int key) {
 		boolean foundFlag = false;
-        int index = 0;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] == key) {
-                index = i;
-                stopwatch();
+                stopTimer();
                 foundFlag = true;
                 System.out.println("Linear search returned key " + key
-                        + " at index " + i + " in " + Driver.timeElapsed
+                        + " at index " + i + " in " + timeElapsed
                         + " millisecond(s).");
                 break;
 			}
 		}
 		if (!foundFlag) {
-            stopwatch();
+            stopTimer();
             System.out.println(Integer.MIN_VALUE);
             System.out.println("Linear search could not find the key. Time" +
-                    " elapsed is " + Driver.timeElapsed + " millisecond(s).");
+                    " elapsed is " + timeElapsed + " millisecond(s).");
         }
-		return;
 	}
-	
+
 	public static int binarySearch(int[] array, int key, int min, int max) {
         if (max < min) {
-            stopwatch();
+            stopTimer();
             System.out.println(Integer.MIN_VALUE + "\nBinary search could not "
-                    + "find the key. Time elapsed is " + Driver.timeElapsed
+                    + "find the key. Time elapsed is " + timeElapsed
                     + " millisecond(s).");
             return Integer.MIN_VALUE;
         }
@@ -40,9 +39,9 @@ public class InsertionSort {
             } else if (array[mid] < key ) {
                 return binarySearch(array, key, (mid + 1), max);
             } else {
-                stopwatch();
+                stopTimer();
                 System.out.println("Binary search returned key " + key
-                        + " at index " + mid + " in " + Driver.timeElapsed
+                        + " at index " + mid + " in " + timeElapsed
                         + " millisecond(s).");
                 return mid;
             }
@@ -55,18 +54,17 @@ public class InsertionSort {
         for (int j = 1; j < array.length; j++) {
             key = array[j];
             i = j - 1;
-            while(i >= 0 && array[i - 1] > key) {
+            while((i >= 0) && (array[i] > key)) {
                 array[i + 1] = array[i];
                 i--;
             }
-            array[i + 1] = key
+            array[i + 1] = key;
         }
-        return;
     }
 
-    private static void stopwatch() {
-        Driver.timeFinal = System.currentTimeMillis();
-        System.out.println("timeFinal: " + Driver.timeFinal);
-        Driver.timeElapsed = (Driver.timeFinal - Driver.timeInitial);
+    private static void stopTimer() {
+        timeFinal = System.nanoTime();
+        System.out.println("timeFinal: " + timeFinal);
+        timeElapsed = (timeFinal - timeInitial);
     }
 }

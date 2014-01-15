@@ -1,11 +1,18 @@
 package labone.insertionsort;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import static labone.insertionsort.InsertionSort.*;
+
 public class Driver {
 
-    public static void main(String[] args) {
-        int n;
+    public static void main(String[] args) throws FileNotFoundException {
+
         int key;
-        for (int power = 1; power < 26; power++){
+        int n;
+        for (int power = 4; power <= 25; power++){
             n = (int) Math.pow(2, power);
             int[] array = new int[n];
             for (int i = 0; i < array.length; i++) {
@@ -15,27 +22,43 @@ public class Driver {
             System.out.println("The key on iteration " + power + " is "
                     + key + ".");
 
-            timeInitial = System.currentTimeMillis();
+            startTimer();
             System.out.println("timeInitial: " + timeInitial);
-            InsertionSort.linearSearch(array, key);
+            linearSearch(array, key);
 
-            timeInitial = System.currentTimeMillis();
+            startTimer();
             System.out.println("timeInitial: " + timeInitial);
-            InsertionSort.insertionSort(array);
-            InsertionSort.binarySearch(array, key, 0, (n - 1));
+            insertionSort(array);
+            binarySearch(array, key, 0, (n - 1));
             System.out.println();
         }
+
+        Scanner scan = new Scanner(new File("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labone\\insertionsort\\keys.csv"));
+        scan.useDelimiter(",");
         n = 1000;
-        int[] unsorted = new int[1000];
-        while(n >= 0) {
-            unsorted[n] = n;
-            n--
+        key = (int) (Math.random() * n + 1);
+        int[] csvArray = new int[n];
+        for (int i = 0; scan.hasNext(); i++) {
+            csvArray[i] = Integer.parseInt(scan.next());
         }
-        InsertionSort.linearSearch(unsorted);
-        InsertionSort.binnarySearch(unsorted, key, 0, (n-1));
+        scan.close();
+
+        startTimer();
+        System.out.println("timeInitial: " + timeInitial);
+        linearSearch(csvArray, key);
+
+        startTimer();
+        System.out.println("timeInitial: " + timeInitial);
+        insertionSort(csvArray);
+        binarySearch(csvArray, key, 0, (n - 1));
+        System.out.println();
     }
+
+    private static void startTimer() {
+        timeInitial = System.nanoTime();
+    }
+
     static long timeInitial;
     static long timeFinal;
     static long timeElapsed;
-    protected static final long MILLI_TO_BASE = 1000;
 }
