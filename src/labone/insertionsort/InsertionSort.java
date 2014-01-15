@@ -1,34 +1,30 @@
 package labone.insertionsort;
 
-import static labone.insertionsort.Driver.*;
-
 public class InsertionSort {
-	
-	public static void linearSearch(int[] array, int key) {
-		boolean foundFlag = false;
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] == key) {
-                stopTimer();
+        
+        public static void linearSearch(int[] array, int key) {
+                boolean foundFlag = false;
+                for (int i = 0; i < array.length; i++) {
+                        if (array[i] == key) {
                 foundFlag = true;
                 System.out.println("Linear search returned key " + key
-                        + " at index " + i + " in " + timeElapsed
+                        + " at index " + i + " in " + Driver.timeElapsed
                         + " millisecond(s).");
                 break;
-			}
-		}
-		if (!foundFlag) {
-            stopTimer();
+                        }
+                }
+                if (!foundFlag) {
+            ;
             System.out.println(Integer.MIN_VALUE);
             System.out.println("Linear search could not find the key. Time" +
-                    " elapsed is " + timeElapsed + " millisecond(s).");
+                    " elapsed is " + Driver.timeElapsed + " millisecond(s).");
         }
-	}
+        }
 
-	public static int binarySearch(int[] array, int key, int min, int max) {
+        public static int binarySearch(int[] array, int key, int min, int max) {
         if (max < min) {
-            stopTimer();
             System.out.println(Integer.MIN_VALUE + "\nBinary search could not "
-                    + "find the key. Time elapsed is " + timeElapsed
+                    + "find the key. Time elapsed is " + Driver.timeElapsed
                     + " millisecond(s).");
             return Integer.MIN_VALUE;
         }
@@ -39,14 +35,13 @@ public class InsertionSort {
             } else if (array[mid] < key ) {
                 return binarySearch(array, key, (mid + 1), max);
             } else {
-                stopTimer();
                 System.out.println("Binary search returned key " + key
-                        + " at index " + mid + " in " + timeElapsed
+                        + " at index " + mid + " in " + Driver.timeElapsed
                         + " millisecond(s).");
                 return mid;
             }
         }
-	}
+        }
 
     public static void insertionSort(int[] array) {
         int key;
@@ -60,11 +55,5 @@ public class InsertionSort {
             }
             array[i + 1] = key;
         }
-    }
-
-    private static void stopTimer() {
-        timeFinal = System.nanoTime();
-        System.out.println("timeFinal: " + timeFinal);
-        timeElapsed = (timeFinal - timeInitial);
     }
 }
