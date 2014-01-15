@@ -2,26 +2,26 @@ package labone.insertionsort;
 
 public class InsertionSort {
         
-        public static void linearSearch(int[] array, int key) {
-                boolean foundFlag = false;
-                for (int i = 0; i < array.length; i++) {
-                        if (array[i] == key) {
-                foundFlag = true;
-                System.out.println("Linear search returned key " + key
-                        + " at index " + i + " in " + Driver.timeElapsed
-                        + " millisecond(s).");
-                break;
-                        }
-                }
-                if (!foundFlag) {
-            ;
-            System.out.println(Integer.MIN_VALUE);
-            System.out.println("Linear search could not find the key. Time" +
-                    " elapsed is " + Driver.timeElapsed + " millisecond(s).");
-        }
-        }
+    public static void linearSearch(int[] array, int key) {
+            boolean foundFlag = false;
+            for (int i = 0; i < array.length; i++) {
+                    if (array[i] == key) {
+            foundFlag = true;
+            System.out.println("Linear search returned key " + key
+                    + " at index " + i + " in " + Driver.timeElapsed
+                    + " millisecond(s).");
+            break;
+                    }
+            }
+            if (!foundFlag) {
+        ;
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println("Linear search could not find the key. Time" +
+                " elapsed is " + Driver.timeElapsed + " millisecond(s).");
+            }
+    }
 
-        public static int binarySearch(int[] array, int key, int min, int max) {
+    public static int binarySearch(int[] array, int key, int min, int max) {
         if (max < min) {
             System.out.println(Integer.MIN_VALUE + "\nBinary search could not "
                     + "find the key. Time elapsed is " + Driver.timeElapsed
@@ -41,7 +41,7 @@ public class InsertionSort {
                 return mid;
             }
         }
-        }
+    }
 
     public static void insertionSort(int[] array) {
         int key;
