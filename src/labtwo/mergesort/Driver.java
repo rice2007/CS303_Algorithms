@@ -19,15 +19,30 @@ public class Driver {
 			}
 			
 			System.out.println("Merge sort iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(iArray));
+			 */
 			startTimer();
 			MergeSort.mergeSort(iArray, temp, 0, n - 1);
 			stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(iArray));
+			 */
 			
-			System.out.println
-			("Insertion sort iteration " + power + " ");
+			System.out.println("Insertion sort iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArray));
+			 */
 			startTimer();
 			InsertionSort.insertionSort(mArray);
 			stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArray));
+			 */
 		}
 	}
 	
