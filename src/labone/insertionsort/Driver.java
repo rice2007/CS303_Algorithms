@@ -33,7 +33,7 @@ public class Driver {
             System.out.println();
         }
 
-        Scanner scan = new Scanner(new File("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labone\\insertionsort\\keys.csv"));
+        Scanner scan = new Scanner(new File("keys.csv"));
         scan.useDelimiter(",");
         n = 1000;
         key = (int) (Math.random() * n + 1);
