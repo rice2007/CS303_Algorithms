@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import static labone.insertionsort.InsertionSort.*;
 
+
 public class Driver {
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -25,11 +26,13 @@ public class Driver {
             startTimer();
             System.out.println("timeInitial: " + timeInitial);
             linearSearch(array, key);
+            stopTimer();
 
             startTimer();
             System.out.println("timeInitial: " + timeInitial);
             insertionSort(array);
             binarySearch(array, key, 0, (n - 1));
+            stopTimer();
             System.out.println();
         }
 
@@ -46,11 +49,13 @@ public class Driver {
         startTimer();
         System.out.println("timeInitial: " + timeInitial);
         linearSearch(csvArray, key);
+        stopTimer();
 
         startTimer();
         System.out.println("timeInitial: " + timeInitial);
         insertionSort(csvArray);
         binarySearch(csvArray, key, 0, (n - 1));
+        stopTimer();
         System.out.println();
     }
 
@@ -58,7 +63,13 @@ public class Driver {
         timeInitial = System.nanoTime();
     }
 
-    static long timeInitial;
-    static long timeFinal;
-    static long timeElapsed;
+    private static void stopTimer() {
+        timeFinal = System.nanoTime();
+        System.out.println("timeFinal: " + timeFinal);
+        timeElapsed = (timeFinal - timeInitial);
+    }
+
+    protected static long timeInitial;
+    protected static long timeFinal;
+    protected static long timeElapsed;
 }
