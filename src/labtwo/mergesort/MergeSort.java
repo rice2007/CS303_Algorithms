@@ -1,5 +1,7 @@
 package labtwo.mergesort;
 
+import labone.insertionsort.InsertionSort;
+
 public class MergeSort {
 
     public static void mergeSort(int[] array, int[] temp, int low, int high) {
@@ -7,7 +9,7 @@ public class MergeSort {
             int mid = (int) Math.floor((low + high) / 2);
             mergeSort(array, temp, low, mid);
             mergeSort(array, temp, (mid + 1), high);
-            merge(array, temp, low, mid, high);
+            InsertionSort.insertionSort(array);
         }
     }
 
