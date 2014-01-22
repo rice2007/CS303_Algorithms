@@ -62,7 +62,7 @@ public class Driver {
     private static void startTimer() {
         timeInitial = System.nanoTime();
     }
-    
+
     private static void stopTimer() {
         timeFinal = System.nanoTime();
         System.out.println("timeFinal: " + timeFinal);
