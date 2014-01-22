@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Final Submission&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labone/insertionsort/Driver.java" afterPath="$PROJECT_DIR$/src/labone/insertionsort/Driver.java" />
+    <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Trees" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" afterPath="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" afterPath="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -61,37 +63,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" line="26" class="labtwo.mergesort.MergeSort" package="labtwo.mergesort">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" line="16" class="labtwo.mergesort.MergeSort" package="labtwo.mergesort">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" line="6" class="labtwo.mergesort.MergeSort" package="labtwo.mergesort">
+      <breakpoint url="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" line="45" class="labtwo.mergesort.MergeSort" package="labtwo.mergesort">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -116,28 +88,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MergeSort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="1" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="1" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1292">
+            <state line="74" column="1" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertionSort.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InsertionSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="1" selection-start="2030" selection-end="2030" vertical-scroll-proportion="1.4439919" vertical-offset="277" max-vertical-offset="1088">
+            <state line="61" column="16" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1581">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="20" selection-start="1813" selection-end="1813" vertical-scroll-proportion="3.3867188" vertical-offset="0" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
@@ -146,10 +118,8 @@
       <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,6 +131,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Push.Settings">
+    <option name="myUpdateMethod" value="REBASE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -170,10 +143,12 @@
         <option value="$PROJECT_DIR$/src/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/labone/insertionsort/merge.txt" />
         <option value="$PROJECT_DIR$/src/labone/insertionsort/Test.java" />
+        <option value="$PROJECT_DIR$/src/labone/insertionsort/Driver.java" />
+        <option value="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" />
+        <option value="$PROJECT_DIR$/Notes/Trees" />
+        <option value="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/labtwo/mergesort/Driver.java" />
         <option value="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" />
-        <option value="$PROJECT_DIR$/src/labone/insertionsort/Driver.java" />
-        <option value="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" />
       </list>
     </option>
   </component>
@@ -209,7 +184,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,7 +241,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +251,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="editor" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -287,8 +262,10 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="SearchEverywhereHistory" value="Merg" />
   </component>
-  <component name="RunManager" selected="Application.Driver (1)">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="labone.insertionsort.Test" />
       <option name="VM_PARAMETERS" />
@@ -305,13 +282,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="InsertionSort" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="labone.insertionsort.Driver" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -321,13 +298,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MergeSort" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="labtwo.mergesort.Driver" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -472,13 +449,13 @@
     </configuration>
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Driver" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Driver (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.InsertionSort" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MergeSort" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Driver (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Driver" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MergeSort" />
+        <item index="1" class="java.lang.String" itemvalue="Application.InsertionSort" />
         <item index="2" class="java.lang.String" itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -523,7 +500,15 @@
       <created>1389809640955</created>
       <updated>1389809640955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Final Submission&#10;">
+      <created>1389885515019</created>
+      <updated>1389885515019</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Add InsertionSort">
+      <created>1389890482139</created>
+      <updated>1389890482139</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -536,23 +521,23 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39011705" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.63329" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.145625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33420026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5643693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39921975" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -570,7 +555,8 @@
     <MESSAGE value="~" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Final Submission" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Final Submission&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Final Submission&#10;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Add InsertionSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Add InsertionSort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -580,6 +566,62 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="1" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="61" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="1" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="61" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="18" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="765">
@@ -590,24 +632,20 @@
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="37" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+    <entry file="file://$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="18" column="25" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+    <entry file="file://$PROJECT_DIR$/Notes/Trees">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+        <state line="42" column="35" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.95423955" vertical-offset="5" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
@@ -619,9 +657,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="1" selection-start="2030" selection-end="2030" vertical-scroll-proportion="1.4439919" vertical-offset="277" max-vertical-offset="1088">
+        <state line="61" column="16" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="20" selection-start="1813" selection-end="1813" vertical-scroll-proportion="3.3867188" vertical-offset="0" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
@@ -666,6 +725,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

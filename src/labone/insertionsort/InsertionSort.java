@@ -2,6 +2,12 @@ package labone.insertionsort;
 
 public class InsertionSort {
 
+    /**
+     * Searches an array using the brute-force method of linear search
+     *
+     * @param array the array to be searched.
+     * @param key the value linear search will find.
+     */
     public static void linearSearch(int[] array, int key) {
         boolean foundFlag = false;
         for (int i = 0; i < array.length; i++) {
@@ -21,6 +27,15 @@ public class InsertionSort {
         }
     }
 
+    /**
+     * Searches an array using the divide-and-conquer method of binary search
+     *
+     * @param array the array to be searched.
+     * @param key the value to be searched.
+     * @param min
+     * @param max
+     * @return
+     */
     public static int binarySearch(int[] array, int key, int min, int max) {
         if (max < min) {
             System.out.println(Integer.MIN_VALUE + "\nBinary search could not "
@@ -50,6 +65,20 @@ public class InsertionSort {
             key = array[j];
             i = j - 1;
             while((i >= 0) && (array[i] > key)) {
+                array[i + 1] = array[i];
+                i--;
+            }
+            array[i + 1] = key;
+        }
+    }
+
+    public static void insertionSort(int[] array, int low, int high) {
+        int key;
+        int i;
+        for (int j = 1; j <= high; j++) {
+            key = array[j];
+            i = j - 1;
+            while((i >= low) && (array[i] > key)) {
                 array[i + 1] = array[i];
                 i--;
             }

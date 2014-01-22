@@ -1,0 +1,19 @@
+    T(n)            Theta(T(n))
+1. an + b        | n
+2. an^2 + bn + c | n^2
+3. an log(n) +c  | n log(n)
+4. a log(n) + c  | log(n)
+
+Recursion Tree for solving recurrence
+replace n with the corresponding node of the tree
+base: T(n/2) + T(n/2) + cn
+first nodes: T(n/2) = 2T(n/4) + c(n/2)
+substitute into base:: T(n) = 2[2T(n/4) + c(n/2)] + cn
+second nodes: T(n/4) = 2T(n/8) + C(n/4)
+substitute into base: 4[2T(n/8) + c(n/4)] + 2cn
+reduce the pattern: 2^3 T(2/2^3) + 3cn
+introduce variables: 2^k T(n/2^k) + kcn
+    where k = log(n)
+simplify base: T(n) = nT(n/n) + log(n) + cn
+    T(n) = cn + cn log(n)
+        which is n log(n)

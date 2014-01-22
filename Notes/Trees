@@ -1,0 +1,43 @@
+Trees
+    general tree - hierarchical data structure containing k >= 1 nodes where N = {n1, n2,..., nk}
+    set of nodes, except root, can be partitioned into zero or more disjoint subsets
+        each partition is a subtree
+        partitioning property holds for all subtrees
+    degree - number of successors of a node
+        parent - predecessor of a node
+        child - successor of a node
+        siblings - nodes with the same parent (on the same level)
+    path - sequence of nodes such that either n(i+1) is a child or parent of n(i)
+        simple path - all nodes are unique
+    ancestors - all nodes in the path from n to the root
+    descendants - all nodes contained in a node's subtree
+    height - length of the longest path from a node n to the root
+
+Binary Tree
+    finite set of nodes that could be empty
+    distinct from general tree with no degree > 2
+    ordered tree - every node is explicitly identified as being either the left or right child of its parent
+    consists of root and two disjoint binary trees
+        known as left and right subtree
+    complete binary tree - at any given level, all nodes are filled
+
+Min-Heap
+    binary tree satisfying two conditions:
+        order property - data value in a node is no greater than data values stored in descendants
+            if added element violates order property, the tree will swap nodes until order is satisfied
+        structure property - tree must be complete excluding lowest level
+            when new element is added, the element will begin filling from the left
+    mutator methods
+        insert a new value
+            insertion much maintain order and structure properties
+        remove and return smallest value (root)
+    Implementation using 1D array
+        heaps stored in 1D array in strict left-to-right level order
+        heapform - 1D array representation of a heap
+            does not need pointers
+            position relationship
+                left child of i is 2i
+                right child of i is 2i + 1
+                left sibling is i - 1
+                right sibling is i + 1
+                parent is |_i / 2_|
