@@ -20,7 +20,6 @@ public class InsertionSort {
             }
         }
         if (!foundFlag) {
-            ;
             System.out.println(Integer.MIN_VALUE);
             System.out.println("Linear search could not find the key. Time" +
                     " elapsed is " + Driver.timeElapsed + " millisecond(s).");
@@ -32,9 +31,9 @@ public class InsertionSort {
      *
      * @param array the array to be searched.
      * @param key the value to be searched.
-     * @param min
-     * @param max
-     * @return
+     * @param min the lower bound of the array to be searched
+     * @param max the upper bound of the array to be searched
+     * @return the key if found. If the key is not found, returns Integer.MIN_VALUE.
      */
     public static int binarySearch(int[] array, int key, int min, int max) {
         if (max < min) {
@@ -58,6 +57,11 @@ public class InsertionSort {
         }
     }
 
+    /**
+     * Sorts an array using the insertion sort algorithm.
+     *
+     * @param array the array to be sorted.
+     */
     public static void insertionSort(int[] array) {
         int key;
         int i;
@@ -72,10 +76,17 @@ public class InsertionSort {
         }
     }
 
+    /**
+     * Sorts an array using the insertion sort algorithm.
+     *
+     * @param array the array to be sorted.
+     * @param low the lower bound of the array to be searched.
+     * @param high the upper bound of the array to be searched.
+     */
     public static void insertionSort(int[] array, int low, int high) {
         int key;
         int i;
-        for (int j = 1; j <= high; j++) {
+        for (int j = low + 1; j <= high; j++) {
             key = array[j];
             i = j - 1;
             while((i >= low) && (array[i] > key)) {
