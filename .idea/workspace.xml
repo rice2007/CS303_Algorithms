@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labthree/heapsort/Driver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" afterPath="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" afterPath="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Counting Sort" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Heap Sort Analysis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Quicksort" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" afterPath="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notes/Trees" afterPath="$PROJECT_DIR$/Notes/Trees" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -90,19 +91,26 @@
       <file leaf-file-name="HeapSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+            <state line="32" column="17" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Driver.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="0.2642487" vertical-offset="51" max-vertical-offset="1020">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1003">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Counting Sort" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Notes/Counting Sort">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="30" selection-start="206" selection-end="206" vertical-scroll-proportion="0.06864065" vertical-offset="0" max-vertical-offset="743">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +118,7 @@
       <file leaf-file-name="InsertionSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1768">
+            <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -128,7 +136,7 @@
       <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2295">
+            <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2295">
               <folding />
             </state>
           </provider>
@@ -155,13 +163,18 @@
         <option value="$PROJECT_DIR$/src/labone/insertionsort/merge.txt" />
         <option value="$PROJECT_DIR$/src/labone/insertionsort/Test.java" />
         <option value="$PROJECT_DIR$/src/labone/insertionsort/Driver.java" />
-        <option value="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" />
-        <option value="$PROJECT_DIR$/Notes/Trees" />
         <option value="$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/labtwo/mergesort/Driver.java" />
         <option value="$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/Notes/Trees" />
+        <option value="$PROJECT_DIR$/Notes/Heap Sort Analysis" />
         <option value="$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java" />
+        <option value="$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms" />
+        <option value="$PROJECT_DIR$/src/labone/insertionsort/TEster.java" />
+        <option value="$PROJECT_DIR$/src/labone/insertionsort/Tester.java" />
+        <option value="$PROJECT_DIR$/Notes/Quicksort" />
         <option value="$PROJECT_DIR$/src/labthree/heapsort/Driver.java" />
+        <option value="$PROJECT_DIR$/Notes/Counting Sort" />
       </list>
     </option>
   </component>
@@ -197,6 +210,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,10 +283,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS303_Algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS303_Algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +313,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CS30" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -296,7 +323,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="SearchEverywhereHistory" value="Merg" />
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Application.Tester">
     <configuration default="false" name="InsertionSort" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="labone.insertionsort.Driver" />
       <option name="VM_PARAMETERS" value="" />
@@ -320,6 +347,28 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CS303_Algorithms" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="labone.insertionsort.Tester" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -484,15 +533,17 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.HeapSort" />
       <item index="1" class="java.lang.String" itemvalue="Application.InsertionSort" />
       <item index="2" class="java.lang.String" itemvalue="Application.MergeSort" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Tester" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MergeSort" />
-        <item index="1" class="java.lang.String" itemvalue="Application.InsertionSort" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.Tester" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MergeSort" />
+        <item index="2" class="java.lang.String" itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -548,12 +599,16 @@
       <created>1390354214955</created>
       <updated>1390354214955</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;src/labone/insertionsort/Driver.java&#10;Add InsertionSort&#10;">
+      <created>1390419242829</created>
+      <updated>1390419242829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,17 +620,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46423927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46423927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39921975" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -607,6 +662,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Heap Sort Analysis">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="26" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Trees">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1207">
@@ -617,9 +778,7 @@
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="34" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="986">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,16 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Trees">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.95423955" vertical-offset="5" max-vertical-offset="833" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="848" max-vertical-offset="1377">
@@ -815,19 +964,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Trees">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Heap Sort Analysis">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="26" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Analysis of Divide and Conquer Algorithms">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="957" selection-end="957" vertical-scroll-proportion="0.7550471" vertical-offset="0" max-vertical-offset="743" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Quicksort">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="345" selection-end="345" vertical-scroll-proportion="0.1372813" vertical-offset="0" max-vertical-offset="743" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+        <state line="32" column="17" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="0.2642487" vertical-offset="51" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Counting Sort">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="206" selection-end="206" vertical-scroll-proportion="0.06864065" vertical-offset="0" max-vertical-offset="743">
+          <folding />
         </state>
       </provider>
     </entry>

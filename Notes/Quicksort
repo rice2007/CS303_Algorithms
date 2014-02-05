@@ -1,0 +1,7 @@
+Divide - partition the array array[p...r] into array[p..q-1] and a[p+1...r]
+    each element of array[p...q-1] is <= array[q]
+    a[q] os <= each element of array[q+1...r]
+    array[q] is the pivot - the element around which to partition
+        this element is in its correct position in the array
+Conquer - sort the array by recursive calls
+Combine - since arrays are already sorted, there is no work needed to combine the subarrays.

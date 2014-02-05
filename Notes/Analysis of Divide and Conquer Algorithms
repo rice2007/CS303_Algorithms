@@ -17,3 +17,18 @@ introduce variables: 2^k T(n/2^k) + kcn
 simplify base: T(n) = nT(n/n) + log(n) + cn
     T(n) = cn + cn log(n)
         which is n log(n)
+
+T(n) = T1(n) + T2(n) + T3(n)
+T(n) = Theate(n) + Theta(n^2) + Theta(nlog(n))
+Theta(T(n)) = max[Theta(n),Theta(n^2),Theta(nlog(n))]
+
+t1(n) = a1n + b
+t2(n) a2n^2 + b2n + c
+T3(n) = anlog(n) + b3n + c2
+t(n) = T1(n)+T2(n)+T2(n) = an^2 + a3nlog(n)
+Theta(T(N) = n^2, n<n0
+
+BuildMaxHeap
+c1 + c2 * n/2 * log(n)
+ c1 + c2 * n * log(n)
+ n log(n)

@@ -1,0 +1,4 @@
+Dependent on key assumption: number to be sorted are in range 0 - k
+    Input: a[1...n] where a[j] is an integer in the range 0 - k for j = 1...n
+    Output: b[1...n] - sorted
+    auxiliary storage c[0...k]
