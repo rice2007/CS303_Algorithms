@@ -1,6 +1,7 @@
 package labthree.heapsort;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Driver {
@@ -15,6 +16,8 @@ public class Driver {
         System.out.println("Enter an exponent for the array length.");
         int input = scan.nextInt();
         scan.close();
+        Comparator compLesser = new Lesser();
+        Comparator compGreater = new Greater();
         int n;
         for (int power = 4; power <= input; power++) {
             n = (int) Math.pow(2, power);
