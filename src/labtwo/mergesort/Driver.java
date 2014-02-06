@@ -13,6 +13,7 @@ public class Driver {
     private static final double ONE_THIRD = 0.33;
     private static final double ONE_HALF = 0.5;
 
+<<<<<<< HEAD
     public static void main(String[] args) {
         int n;
         for (int power = 4; power <= 25; power++) {
@@ -23,11 +24,24 @@ public class Driver {
                 iArray[i] = (int) (Math.random() * (n + 1));
             }
             int[] mArrayFifth = Arrays.copyOf(iArray, n);
+=======
+	public static void main(String[] args) {
+		int n;
+		for (int power = 4; power <= 25; power++) {
+			n = (int) Math.pow(2, power);
+			int[] iArray = new int[n];
+   			int[] temp   = new int[n];
+			for (int i = 0; i < n; i++) {
+				iArray[i] = (int) (Math.random() * (n + 1));
+			}
+			int[] mArrayFifth = Arrays.copyOf(iArray, n);
+>>>>>>> origin/master
             int[] mArrayFourth = Arrays.copyOf(iArray, n);
             int[] mArrayThird = Arrays.copyOf(iArray, n);
             int[] mArrayHalf = Arrays.copyOf(iArray, n);
             int[] mArray = Arrays.copyOf(iArray, n);
 
+<<<<<<< HEAD
             System.out.println("Merge sort iteration " + power + " ");
                         /*
                          * Print statement is commented out. java.util.Arrays has been imported.
@@ -108,6 +122,88 @@ public class Driver {
             System.out.println("---------------------------------------");
         }
     }
+=======
+			System.out.println("Merge sort iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArray));
+			 */
+			startTimer();
+			MergeSort.mergeSort(mArray, temp, 0, n - 1);
+			stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArray));
+			 */
+
+            System.out.println("Merge sort with insertion sort at 1/5 iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayFifth));
+			 */
+            startTimer();
+            MergeSort.mergeInsertionSort(mArrayFifth, temp, 0, n - 1, ONE_FIFTH);
+            stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayFifth));
+			 */
+
+            System.out.println("Merge sort with insertion sort at 1/4 iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayFourth));
+			 */
+            startTimer();
+            MergeSort.mergeInsertionSort(mArrayFourth, temp, 0, n - 1, ONE_FOURTH);
+            stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayFourth));
+			 */
+
+            System.out.println("Merge sort with insertion sort at 1/3 iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayThird));
+			 */
+            startTimer();
+            MergeSort.mergeInsertionSort(mArrayThird, temp, 0, n - 1, ONE_THIRD);
+            stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayThird));
+			 */
+
+            System.out.println("Merge sort with insertion sort at 1/2 iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayHalf));
+			 */
+            startTimer();
+            MergeSort.mergeInsertionSort(mArrayHalf, temp, 0, n - 1, ONE_HALF);
+            stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(mArrayHalf));
+			 */
+
+			System.out.println("Insertion sort iteration " + power + " ");
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(iArray));
+			 */
+			startTimer();
+			InsertionSort.insertionSort(iArray);
+			stopTimer();
+			/*
+			 * Print statement is commented out. java.util.Arrays has been imported.
+			 * System.out.println(Arrays.toString(iArray));
+			 */
+            System.out.println("---------------------------------------");
+		}
+	}
+>>>>>>> origin/master
 
     /**
      * Gets an arbitrary point in time expressed in nanoseconds.
@@ -127,4 +223,8 @@ public class Driver {
         timeElapsed = (timeFinal - timeInitial);
         System.out.println("timeElapsed: " + timeElapsed + "\n");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

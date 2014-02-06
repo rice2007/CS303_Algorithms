@@ -9,6 +9,11 @@ import static labone.insertionsort.InsertionSort.*;
 
 public class Driver {
 
+    protected static long timeElapsed;
+
+    private static long timeInitial;
+    private static long timeFinal;
+
     public static void main(String[] args) throws FileNotFoundException {
 
         int key;
@@ -68,8 +73,4 @@ public class Driver {
         System.out.println("timeFinal: " + timeFinal);
         timeElapsed = (timeFinal - timeInitial);
     }
-
-    protected static long timeInitial;
-    protected static long timeFinal;
-    protected static long timeElapsed;
 }
