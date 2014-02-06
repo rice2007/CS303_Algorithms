@@ -4,11 +4,8 @@ import labone.insertionsort.InsertionSort;
 import labtwo.mergesort.MergeSort;
 
 import java.util.Arrays;
-<<<<<<< HEAD
 import java.util.Comparator;
 import java.util.Scanner;
-=======
->>>>>>> origin/master
 
 public class Driver {
 
@@ -17,30 +14,29 @@ public class Driver {
     private static long timeElapsed;
 
     public static void main(String[] args) {
-<<<<<<< HEAD
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter an exponent for the array length.");
-        int input = scan.nextInt();
-        scan.close();
-        Comparator compLesser = new Lesser();
-        Comparator compGreater = new Greater();
-=======
->>>>>>> origin/master
+        Comparator minComp = new Lesser();
+        Comparator maxComp = new Greater();
         int n;
-        for (int power = 4; power <= 25; power++) {
+        for (int power = 4; power <= 5; power++) {
             n = (int) Math.pow(2, power);
-            int[] hArray = new int[n];
+            int[] maxArray = new int[n];
             for (int i = 0; i < n; i++) {
-                hArray[i] = (int) (Math.random() * (n + 1));
+                maxArray[i] = (int) (Math.random() * (n + 1));
             }
-            int[] iArray = Arrays.copyOf(hArray, n);
-            int[] mArray = Arrays.copyOf(hArray, n);
+            int[] iArray = Arrays.copyOf(maxArray, n);
+            int[] mArray = Arrays.copyOf(maxArray, n);
+            int[] minArray = Arrays.copyOf(maxArray, n);
             int[] temp = new int[n];
 
-            System.out.println("Heap Sort iteration " + power + ": " );
+            System.out.println("MaxHeap Sort iteration " + power + ": " );
             startTimer();
-            HeapSort.heapSort(hArray);
+            HeapSort.heapSort(maxArray, maxComp);
+            stopTimer();
+
+            System.out.println("MinHeap Sort iteration " + power + ": " );
+            startTimer();
+            HeapSort.heapSort(minArray, minComp);
             stopTimer();
 
             System.out.println("Insertion Sort iteration " + power + ": " );

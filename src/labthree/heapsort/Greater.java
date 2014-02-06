@@ -11,9 +11,8 @@ public class Greater implements Comparator<Integer> {
 
     @Override
     public int compare(Integer i, Integer j) {
-        return (i >= j)
+        return (i > j)
                 ? 1
                 : -1;
-
     }
 }
