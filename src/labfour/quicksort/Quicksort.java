@@ -4,6 +4,14 @@ import labone.insertionsort.InsertionSort;
 
 public class Quicksort {
 
+    private static final int CUTOFF = 32;
+
+    /**
+     *
+     * @param array the array to be sorted
+     * @param p the first element of the array
+     * @param r the last element of the array
+     */
     public static void quicksort(int[] array, int p, int r) {
         if (p < r) {
             int q = partition(array, p, r);
@@ -12,9 +20,15 @@ public class Quicksort {
         }
     }
 
+    /**
+     *
+     * @param array the array to be sorted
+     * @param p the first element of the array
+     * @param r the last element of the array
+     */
     public static void quicksortPartition(int[] array, int p, int r) {
         int n = r - p + 1;
-        if (n <= 15) {
+        if (n <= CUTOFF) {
             InsertionSort.insertionSort(array, p, r);
             return;
         }
@@ -27,6 +41,14 @@ public class Quicksort {
         quicksort(array, q + 1, r);
     }
 
+    /**
+     *
+     * @param array the array to be sorted
+     * @param i
+     * @param j
+     * @param k
+     * @return
+     */
     private static int medianThree(int[]array, int i, int j, int k) {
         if (((array[i] > array[j]) && (array[i] < array[k])) || ((array[i] < array[j]) && (array[i] > array[k]))) {
             return i;
@@ -37,6 +59,13 @@ public class Quicksort {
         }
     }
 
+    /**
+     *
+     * @param array the array to be sorted
+     * @param p the first element of the array
+     * @param r the last element of the array
+     * @return
+     */
     private static int partition(int[] array, int p, int r) {
         int x = array[r];
         int i = p - 1;

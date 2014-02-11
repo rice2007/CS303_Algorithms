@@ -1,6 +1,12 @@
 package labfour.quicksort;
 
+import labone.insertionsort.InsertionSort;
+import labthree.heapsort.Greater;
+import labthree.heapsort.HeapSort;
+import labtwo.mergesort.MergeSort;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class QuicksortDriver {
@@ -10,6 +16,8 @@ public class QuicksortDriver {
     private static long timeElapsed;
 
     public static void main(String[] args) {
+
+        Comparator maxComp = new Greater();
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter an exponent for the array length.");
         int input = scan.nextInt();
@@ -18,23 +26,40 @@ public class QuicksortDriver {
         for (int power = 4; power <= input; power++) {
             n = (int) Math.pow(2, power);
             int[] qArray = new int[n];
+            int[] temp = new int[n];
             for (int i = 0; i < n; i++) {
                 qArray[i] = (int) (Math.random() * (n + 1));
             }
             int[] iArray = Arrays.copyOf(qArray, n);
+            int[] mArray = Arrays.copyOf(qArray, n);
             int[] hArray = Arrays.copyOf(qArray, n);
+            int[] qPArray = Arrays.copyOf(qArray, n);
 
-            System.out.println("Unsorted: " + Arrays.toString(qArray));
+            System.out.println("Insertion sort iteration " + power + ": ");
             startTimer();
-            Quicksort.quicksort(qArray, 0, qArray.length - 1);
+            InsertionSort.insertionSort(iArray);
             stopTimer();
-            System.out.println("Sorted: " + Arrays.toString(qArray) + "\n");
 
-            System.out.println("Unsorted: " + Arrays.toString(qArray));
+            System.out.println("Merge sort iteration " + power + ": ");
             startTimer();
-            Quicksort.quicksortPartition(qArray, 0, qArray.length - 1);
+            MergeSort.mergeSort(mArray, temp, 0, (n - 1));
             stopTimer();
-            System.out.println("Sorted: " + Arrays.toString(qArray) + "\n");
+
+            System.out.println("Maxheapsort iteration " + power + ": ");
+            startTimer();
+            HeapSort.heapSort(hArray, maxComp);
+            stopTimer();
+
+            System.out.println("Quicksort iteration " + power + ": ");
+            startTimer();
+            Quicksort.quicksort(qArray, 0, (n - 1));
+            stopTimer();
+
+            System.out.println("Quicksort w/ partition iteration " + power + ": ");
+            startTimer();
+            Quicksort.quicksortPartition(qPArray, 0, (n - 1));
+            stopTimer();
+            System.out.println("---------------------------------------\n");
         }
     }
 
@@ -54,6 +79,6 @@ public class QuicksortDriver {
         System.out.println("timeInitial: " + timeFinal);
         System.out.println("timeFinal: " + timeFinal);
         timeElapsed = (timeFinal - timeInitial);
-        System.out.println("timeElapsed: " + timeElapsed);
+        System.out.println("timeElapsed: " + timeElapsed + "\n");
     }
 }
