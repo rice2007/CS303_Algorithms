@@ -2,7 +2,7 @@ package labthree.heapsort;
 
 import java.util.Comparator;
 
-public class HeapSort {
+public class Heapsort {
 
     private static int node;
     private static int heapSize;

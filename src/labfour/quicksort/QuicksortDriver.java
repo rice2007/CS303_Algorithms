@@ -2,12 +2,11 @@ package labfour.quicksort;
 
 import labone.insertionsort.InsertionSort;
 import labthree.heapsort.Greater;
-import labthree.heapsort.HeapSort;
+import labthree.heapsort.Heapsort;
 import labtwo.mergesort.MergeSort;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Scanner;
 
 public class QuicksortDriver {
 
@@ -18,12 +17,8 @@ public class QuicksortDriver {
     public static void main(String[] args) {
 
         Comparator maxComp = new Greater();
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter an exponent for the array length.");
-        int input = scan.nextInt();
-        scan.close();
         int n;
-        for (int power = 4; power <= input; power++) {
+        for (int power = 4; power <= 25; power++) {
             n = (int) Math.pow(2, power);
             int[] qArray = new int[n];
             int[] temp = new int[n];
@@ -47,7 +42,7 @@ public class QuicksortDriver {
 
             System.out.println("Maxheapsort iteration " + power + ": ");
             startTimer();
-            HeapSort.heapSort(hArray, maxComp);
+            Heapsort.heapSort(hArray, maxComp);
             stopTimer();
 
             System.out.println("Quicksort iteration " + power + ": ");

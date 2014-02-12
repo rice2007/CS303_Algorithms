@@ -37,8 +37,8 @@ public class Quicksort {
         array[m] = array[r];
         array[r] = temp;
         int q = partition(array, p, r);
-        quicksort(array, p, q - 1);
-        quicksort(array, q + 1, r);
+        quicksortPartition(array, p, q - 1);
+        quicksortPartition(array, q + 1, r);
     }
 
     /**

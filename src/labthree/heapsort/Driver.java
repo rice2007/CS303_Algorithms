@@ -5,7 +5,6 @@ import labtwo.mergesort.MergeSort;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Scanner;
 
 public class Driver {
 
@@ -31,12 +30,12 @@ public class Driver {
 
             System.out.println("MaxHeap Sort iteration " + power + ": " );
             startTimer();
-            HeapSort.heapSort(maxArray, maxComp);
+            Heapsort.heapSort(maxArray, maxComp);
             stopTimer();
 
             System.out.println("MinHeap Sort iteration " + power + ": " );
             startTimer();
-            HeapSort.heapSort(minArray, minComp);
+            Heapsort.heapSort(minArray, minComp);
             stopTimer();
 
             System.out.println("Insertion Sort iteration " + power + ": " );
