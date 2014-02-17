@@ -2,31 +2,52 @@ package labfive.linkedlist;
 
 public class LinkedList {
 
+    private Node current;
     private Node head;
+    private Node tail;
     private int listCount;
     
     public LinkedList() {
         // to be implemented//
     }
     
-    public boolean isEmpty() { //TODO
-        return true;
+    public boolean isEmpty() {
+        return (listCount == 0);
     }
     
     public void add(int data) {
-       // to be implemented//
+        Node node = new Node(data);
+        if (this.listCount == 0) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.tail.setNext(node);
+            this.tail = node;
+        }
+        listCount++;
     }
     
-    public void add(int data, int index)
-    {
-        // to be implemented//
+    public void add(int data, int index) {
+        Node node = new Node(data);
+        if (index == 0) {
+            node.setNext(this.head);
+            this.head = node;
+        } else {
+
+        }
+        listCount++;
     }
     
     public int get(int index) {
-        return 0;
+        this.current = this.head;
+        for (int i = 0; i < index; i++) {
+            this.current = this.current.getNext();
+        }
+        return this.current.getData();
     }
     
     public int contains(int val) {
+        //int i = -1;
         for (int i = 0; i < this.size(); i++) {
             if (val == this.get(i)) {
                 return 1;
@@ -35,9 +56,7 @@ public class LinkedList {
         return -1;
     }
     
-    public boolean remove()
-    {
-        // to be implemented//
+    public boolean remove() {
         return true;
     }
     
@@ -47,10 +66,8 @@ public class LinkedList {
         return true;
     }
     
-    public int size()
-    {
-        // to be implemented//
-        return 0;
+    public int size() {
+        return listCount;
     }
 
     @Override
