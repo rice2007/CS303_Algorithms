@@ -1,0 +1,16 @@
+BST property - an ordering on the nodes such that
+    one data value in the info field of a node is the key
+    every key value in the left subtree of a node is less than the key value in the node
+    every key value in the right...
+    keys are assume to be unique
+Insertion
+    node insertions must maintain BST property
+    insert(S, z) compares the value v (z.key) to be inserted to the value n in the current node
+        if (v < n) ? left : right
+        continue until v = n or child  == null
+Deleting node
+    no children, modify parent z with null as child
+    one child, elevate child to take z's position by modifying z' parent to replace z by z's child
+    two children, find successor y
+        if y is right child, replace z by y, leaving right child alone
+        else place y with own right child and replace z by y
