@@ -2,13 +2,11 @@ package labfive.linkedlist;
 
 public class LinkedList {
 
-    private Node current;
     private Node head;
-    private Node tail;
     private int listCount;
     
     public LinkedList() {
-        // to be implemented//
+        head = null;
     }
     
     public boolean isEmpty() {
@@ -16,38 +14,42 @@ public class LinkedList {
     }
     
     public void add(int data) {
-        Node node = new Node(data);
-        if (this.listCount == 0) {
-            this.head = node;
-            this.tail = node;
+        if (listCount == 0) {
+            head = new Node(data, null);
         } else {
-            this.tail.setNext(node);
-            this.tail = node;
+            Node current = head;
+            while (current.next != null) {
+                current = current.getNext();
+            }
+            current.next = new Node(data, null);
         }
         listCount++;
     }
     
     public void add(int data, int index) {
-        Node node = new Node(data);
         if (index == 0) {
-            node.setNext(this.head);
-            this.head = node;
+            Node node = new Node(data, head);
+            head = node;
         } else {
-
+            Node current = head;
+            for (int i = 0; i < index - 1; i++) {
+                current = current.getNext();
+            }
+            Node node = new Node(data, current.getNext());
+            current.setNext(node);
         }
         listCount++;
     }
     
     public int get(int index) {
-        this.current = this.head;
+        Node current = head;
         for (int i = 0; i < index; i++) {
-            this.current = this.current.getNext();
+            current = current.getNext();
         }
-        return this.current.getData();
+        return current.getData();
     }
     
     public int contains(int val) {
-        //int i = -1;
         for (int i = 0; i < this.size(); i++) {
             if (val == this.get(i)) {
                 return 1;
@@ -57,12 +59,38 @@ public class LinkedList {
     }
     
     public boolean remove() {
+        if (listCount == 0) {
+            return false;
+        } else if (listCount == 1) {
+            head = head.getNext();
+        } else {
+            Node current = head;
+            Node previous = current;
+            while (current.next != null) {
+                previous = current;
+                current = current.getNext();
+            }
+            previous.next = current.next;
+        }
+        listCount--;
         return true;
     }
     
-    public boolean remove(int index)
-    {
-        // to be implemented//
+    public boolean remove(int index) {
+        if (listCount == 0 && index == 0) {
+            return false;
+        } else if (index == 0) {
+            head = head.getNext();
+        } else {
+            Node current = head;
+            Node previous = current;
+            for (int i = 0; i < index; i++) {
+                previous = current;
+                current = current.getNext();
+            }
+            previous.next = current.getNext();
+        }
+        listCount--;
         return true;
     }
     
@@ -72,8 +100,24 @@ public class LinkedList {
 
     @Override
     public String toString() {
-        
-        // to be implemented//
-        return "0";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Linked list: ");
+        if (listCount == 0) {
+            sb.append("empty!");
+        } else {
+            for (int i = 0; i < listCount; i++) {
+                if (i < listCount - 1) {
+                    sb.append(this.get(i));
+                    sb.append(", ");
+                } else {
+                    try {
+                        sb.append(this.get(i));
+                    } catch (NullPointerException e) {
+                        sb.append("empty!");
+                    }
+                }
+            }
+        }
+        return sb.toString();
     }
 }
