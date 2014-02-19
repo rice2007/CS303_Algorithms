@@ -52,7 +52,7 @@ public class LinkedList {
     public int contains(int val) {
         for (int i = 0; i < this.size(); i++) {
             if (val == this.get(i)) {
-                return 1;
+                return i;
             }
         }
         return -1;
