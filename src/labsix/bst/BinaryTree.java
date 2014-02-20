@@ -17,17 +17,6 @@ public class BinaryTree<T extends Comparable<T>> {
 		return cursor.getRight() != null;
 	}
 
-    public BinaryTreeNode<T> search(BinaryTreeNode<T> x, BinaryTreeNode<T> k) {
-        if ( (x == null) || (k.getData().compareTo(x.getData()) == 0) ) {
-            return x;
-        }
-        return (k.getData().compareTo(x.getData()) == -1)
-                ? search(x.getLeft(), k)
-                : search(x.getRight(), k);
-    }
-
-
-
 	public void toLeftChild() {
 		cursor = cursor.getLeft();
 	}
@@ -35,7 +24,6 @@ public class BinaryTree<T extends Comparable<T>> {
 	public void toRightChild() {
 		cursor = cursor.getRight();
 	}
-
 
 	public T get() {
 		return cursor.getData();

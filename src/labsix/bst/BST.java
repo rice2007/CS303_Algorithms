@@ -22,10 +22,19 @@ public class BST<T extends Comparable<T>> extends BinaryTree<T> {
         }
     }
 
+    public BinaryTreeNode<T> search(BinaryTreeNode<T> x, BinaryTreeNode<T> k) {
+        if ( (x == null) || (k.getData().compareTo(x.getData()) == 0) ) {
+            return x;
+        }
+        return (k.getData().compareTo(x.getData()) == -1)
+                ? search(x.getLeft(), k)
+                : search(x.getRight(), k);
+    }
+
     public void walk(BinaryTreeNode<T> x) {
         if (x != null) {
             walk(x.getLeft());
-            System.out.println();
+            System.out.println(x.getData());
             walk(x.getRight());
         }
     }
