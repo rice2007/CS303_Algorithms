@@ -1,0 +1,8 @@
+Properties
+    every node is red or black
+    root node and null leaves are black
+    if (red) children == black
+        does not apply to black nodes and children
+    all simple paths from the node to descendant leaves contain the same number of black nodes
+
+    height of a red-black tree with n internal node <= 2 * log(n + 1) = O(log(n))

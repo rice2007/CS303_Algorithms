@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labsix/bst/BST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labsix/bst/BSTDriver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labsix/bst/BinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Red Black Tree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -91,20 +88,24 @@
         <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="1309">
-              <folding>
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BST.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BST.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labsix/bst/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.49361703" vertical-offset="74" max-vertical-offset="646">
+            <state line="18" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Red Black Tree" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Notes/Red Black Tree">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="50" selection-start="163" selection-end="163" vertical-scroll-proportion="0.09152086" vertical-offset="0" max-vertical-offset="743">
               <folding />
             </state>
           </provider>
@@ -113,10 +114,8 @@
       <file leaf-file-name="BSTDriver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="71" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <element signature="e#566#575#0" expanded="true" />
-              </folding>
+            <state line="13" column="71" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="425">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,25 +123,8 @@
       <file leaf-file-name="BinaryTreeNode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="0" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-              <folding>
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-              </folding>
+            <state line="89" column="0" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="1921">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -198,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/labsix/bst/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/labsix/bst/BSTDriver.java" />
         <option value="$PROJECT_DIR$/src/labsix/bst/BST.java" />
+        <option value="$PROJECT_DIR$/Notes/Red Black Tree" />
       </list>
     </option>
   </component>
@@ -281,90 +264,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Man" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BinaryTreeNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bst" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BinaryTree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -502,6 +401,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -527,19 +439,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -734,7 +633,6 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -745,7 +643,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -754,10 +651,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -772,19 +671,19 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40572172" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359894" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -814,13 +713,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="57" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2295" />
@@ -828,16 +720,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Heapsort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1207">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="23" column="34" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="986" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
@@ -869,9 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Heapsort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="5" column="21" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
@@ -1013,65 +899,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="9" selection-start="1704" selection-end="1704" vertical-scroll-proportion="-0.6382306" vertical-offset="1135" max-vertical-offset="1768">
-          <folding />
-        </state>
+        <state line="43" column="9" selection-start="1704" selection-end="1704" vertical-scroll-proportion="-0.6382306" vertical-offset="1135" max-vertical-offset="1768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1343">
-          <folding />
-        </state>
+        <state line="27" column="20" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1343" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfour/quicksort/Quicksort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="17" column="17" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfive/linkedlist/BucketSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.04576043" vertical-offset="0" max-vertical-offset="743">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.04576043" vertical-offset="0" max-vertical-offset="743" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labthree/heapsort/Heapsort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
+        <state line="4" column="5" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfive/linkedlist/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="398" selection-end="398" vertical-scroll-proportion="0.48048452" vertical-offset="0" max-vertical-offset="743">
-          <folding />
-        </state>
+        <state line="21" column="8" selection-start="398" selection-end="398" vertical-scroll-proportion="0.48048452" vertical-offset="0" max-vertical-offset="743" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfive/linkedlist/LinkedListDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="180" selection-end="180" vertical-scroll-proportion="0.1372813" vertical-offset="0" max-vertical-offset="743">
-          <folding />
-        </state>
+        <state line="6" column="41" selection-start="180" selection-end="180" vertical-scroll-proportion="0.1372813" vertical-offset="0" max-vertical-offset="743" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfour/quicksort/QuicksortDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1343">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1343" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfive/linkedlist/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="4" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1428">
-          <folding />
-        </state>
+        <state line="47" column="4" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Binary Search Tree">
@@ -1096,51 +964,34 @@
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="0" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" vertical-offset="1451" max-vertical-offset="1921">
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="71" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <element signature="e#566#575#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1309">
-          <folding>
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.49361703" vertical-offset="74" max-vertical-offset="646">
+        <state line="18" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Red Black Tree">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="50" selection-start="163" selection-end="163" vertical-scroll-proportion="0.09152086" vertical-offset="0" max-vertical-offset="743">
           <folding />
         </state>
       </provider>
