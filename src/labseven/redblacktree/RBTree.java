@@ -2,15 +2,24 @@ package labseven.redblacktree;
 
 
 import labsix.bst.BinaryTree;
+import labsix.bst.BinaryTreeNode;
 
 import static labseven.redblacktree.RBNode.nil;
 
 public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
 
+    public RBTree() {
+        this.setRoot(nil);
+    }
+
+    public RBNode<T> getRoot(){
+        return (RBNode) super.getRoot();
+    }
+
     public void leftRotate(RBNode<T> x) {
         RBNode<T> y = (RBNode) x.getRight();
         x.setRight(y.getLeft());
-        if (y.getLeft() != nil) {
+        if (y.getLeft() != nil && y.getLeft() != null) {
             y.getLeft().setParent(x);
         }
         y.setParent(x.getParent());
@@ -64,14 +73,17 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
         z.setLeft(nil);
         z.setRight(nil);
         z.setRed();
+        if (z == this.getRoot()){
+            return;
+        }
         this.insertFixup(z);
     }
 
     public void insertFixup(RBNode<T> z) {
-        while (!z.getParent().getColor()) {
+        while (!z.getParent().isBlack() && z.getParent() != nil) {
             if (z.getParent() == z.getParent().getParent().getLeft()) {
                 RBNode<T> y = z.getParent().getParent().getRight();
-                if (!y.getColor()) {
+                if (!y.isBlack()) {
                     z.getParent().setBlack();
                     y.setBlack();
                     z.getParent().getParent().setRed();
@@ -84,8 +96,8 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
                 z.getParent().getParent().setRed();
                 this.rightRotate(z);
             } else {
-                RBNode<T> y = z.getParent().getParent().getLeft();
-                if (!y.getColor()) {
+                RBNode y = z.getParent().getParent().getLeft();
+                if (y != null && !y.isBlack()) {
                     z.getParent().setBlack();
                     y.setBlack();
                     z.getParent().getParent().setRed();

@@ -37,7 +37,6 @@ public class BinaryTreeNode<T>{
         return parent;
     }
 
-
     public void setLeft(BinaryTreeNode<T> newLeft) {
         left = newLeft;
     }

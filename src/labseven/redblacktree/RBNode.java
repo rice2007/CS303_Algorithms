@@ -7,42 +7,41 @@ import labsix.bst.BinaryTreeNode;
 public class RBNode<T> extends BinaryTreeNode<T>{
 
     protected static final RBNode nil = new RBNode();
-    private RBNode<T> left;
-    private RBNode<T> right;
-    private RBNode<T> parent;
     private boolean blackFlag;
     private T data;
 
     public RBNode() {
-        this(null, null, null);
-        this.blackFlag = true;
+        super(null, nil, nil);
+        blackFlag = true;
     }
 
     public RBNode(T theData) {
-        this(theData, null, null);
-        this.blackFlag = true;
+        super(theData, nil, nil);
+        blackFlag = true;
     }
 
     public RBNode(T theData, RBNode<T> leftChild, RBNode<T> rightChild) {
-        this.data = theData;
-        this.left = leftChild;
-        this.right = rightChild;
-        this.blackFlag = true;
+        super(theData, leftChild, rightChild);
+        blackFlag = true;
     }
 
     public RBNode<T> getLeft() {
-        return left;
+        return (RBNode) super.getLeft();
     }
 
     public RBNode<T> getRight() {
-        return right;
+        return (RBNode) super.getRight();
     }
 
     public RBNode<T> getParent() {
-        return parent;
+        return (RBNode) super.getParent();
     }
 
-    public boolean getColor() {
+    public T getData() {
+        return super.getData();
+    }
+
+    public boolean isBlack() {
         return blackFlag;
     }
 
@@ -52,11 +51,5 @@ public class RBNode<T> extends BinaryTreeNode<T>{
 
     public boolean setRed() {
         return this.blackFlag = false;
-    }
-
-    public boolean swapColor() {
-        return (this.blackFlag)
-                ? false
-                : true;
     }
 }
