@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labseven/redblacktree/RBNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notes/Red Black Tree" afterPath="$PROJECT_DIR$/Notes/Red Black Tree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" afterPath="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -77,6 +74,51 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java" line="23" class="labsix.bst.BSTDriver" package="labsix.bst">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java" line="22" class="labsix.bst.BSTDriver" package="labsix.bst">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" line="26" class="labseven.redblacktree.RBTreeDriver" package="labseven.redblacktree">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -92,11 +134,10 @@
           <file leaf-file-name="RBNode.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1054">
+                <state line="32" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#962#963#0" expanded="true" />
-                    <element signature="e#994#995#0" expanded="true" />
+                    <element signature="e#935#936#0" expanded="true" />
+                    <element signature="e#967#968#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -105,10 +146,8 @@
           <file leaf-file-name="RBTreeDriver.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="595">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state line="20" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -116,19 +155,10 @@
           <file leaf-file-name="RBTree.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="18" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.29540482" vertical-offset="698" max-vertical-offset="1870">
+                <state line="74" column="23" selection-start="2053" selection-end="2053" vertical-scroll-proportion="-1.0087527" vertical-offset="1719" max-vertical-offset="2176">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BSTDriver.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="0" selection-start="92" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -140,10 +170,21 @@
           <file leaf-file-name="BinaryTreeNode.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="82" column="34" selection-start="1925" selection-end="1925" vertical-scroll-proportion="2.4595745" vertical-offset="0" max-vertical-offset="1683">
+                <state line="32" column="0" selection-start="770" selection-end="770" vertical-scroll-proportion="0.3042553" vertical-offset="401" max-vertical-offset="1870">
                   <folding>
                     <element signature="e#629#630#0" expanded="true" />
                     <element signature="e#656#657#0" expanded="true" />
+                    <element signature="e#698#699#0" expanded="true" />
+                    <element signature="e#725#726#0" expanded="true" />
+                    <element signature="e#796#797#0" expanded="true" />
+                    <element signature="e#840#841#0" expanded="true" />
+                    <element signature="e#869#870#0" expanded="true" />
+                    <element signature="e#923#924#0" expanded="true" />
+                    <element signature="e#953#954#0" expanded="true" />
+                    <element signature="e#1009#1010#0" expanded="true" />
+                    <element signature="e#1041#1042#0" expanded="true" />
+                    <element signature="e#1099#1100#0" expanded="true" />
+                    <element signature="e#1133#1134#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,7 +193,7 @@
           <file leaf-file-name="BST.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/labsix/bst/BST.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+                <state line="13" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1768">
                   <folding />
                 </state>
               </provider>
@@ -161,8 +202,12 @@
           <file leaf-file-name="BinaryTree.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="5" selection-start="676" selection-end="676" vertical-scroll-proportion="-11.807693" vertical-offset="288" max-vertical-offset="1054">
-                  <folding />
+                <state line="32" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="1122">
+                  <folding>
+                    <element signature="e#620#621#0" expanded="true" />
+                    <element signature="e#726#727#0" expanded="true" />
+                    <element signature="e#758#759#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -216,14 +261,14 @@
         <option value="$PROJECT_DIR$/src/labfive/linkedlist/LinkedList.java" />
         <option value="$PROJECT_DIR$/Notes/Binary Search Tree" />
         <option value="$PROJECT_DIR$/src/labsix/bst/Man.form" />
-        <option value="$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/labsix/bst/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/labsix/bst/BSTDriver.java" />
         <option value="$PROJECT_DIR$/Notes/Red Black Tree" />
         <option value="$PROJECT_DIR$/src/labsix/bst/BST.java" />
-        <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" />
         <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBNode.java" />
         <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" />
+        <option value="$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" />
       </list>
     </option>
   </component>
@@ -370,7 +415,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="project.propGUI" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -480,19 +525,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -518,6 +550,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -645,7 +690,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CS303_Algorithms" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -734,7 +785,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899868" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40572172" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -746,15 +796,43 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.130625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899868" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359894" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899868" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40572172" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -783,11 +861,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/labone/insertionsort/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1768" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1377">
@@ -1014,9 +1087,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Red Black Tree">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
+        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BST.java">
@@ -1026,53 +1097,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="367" selection-end="367" vertical-scroll-proportion="0.4338747" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.33260393" vertical-offset="324" max-vertical-offset="26826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="676" selection-end="676" vertical-scroll-proportion="-11.807693" vertical-offset="288" max-vertical-offset="1054">
-          <folding />
+        <state line="32" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="1122">
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="34" selection-start="1925" selection-end="1925" vertical-scroll-proportion="2.4595745" vertical-offset="0" max-vertical-offset="1683">
+        <state line="32" column="0" selection-start="770" selection-end="770" vertical-scroll-proportion="0.3042553" vertical-offset="401" max-vertical-offset="1870">
           <folding>
             <element signature="e#629#630#0" expanded="true" />
             <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="92" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="595">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="20" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+        <state line="32" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1020">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="18" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.29540482" vertical-offset="698" max-vertical-offset="1870">
+        <state line="74" column="23" selection-start="2053" selection-end="2053" vertical-scroll-proportion="-1.0087527" vertical-offset="1719" max-vertical-offset="2176">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

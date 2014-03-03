@@ -37,7 +37,7 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
     public void rightRotate(RBNode<T> x) {
         RBNode y = (RBNode) x.getLeft();
         x.setLeft(y.getRight());
-        if (y.getRight() != nil) {
+        if (y.getRight() != null) {
             y.getRight().setParent(x);
         }
         y.setParent(x.getParent());
@@ -53,25 +53,26 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
     }
 
     public void insert(RBNode<T> z) {
-        RBNode<T> y = nil;
+        RBNode<T> y = null;
         RBNode<T> x = (RBNode<T>) this.getRoot();
         while (x != nil) {
-            y = x;
-            x = (z.getData().compareTo(x.getData()) == -1)
-                    ? (RBNode<T>) x.getLeft()
-                    : (RBNode<T>) x.getRight();
-
+            if (x != null) {
+                y = x;
+                x = (z.getData().compareTo(x.getData()) == -1)
+                        ? (RBNode<T>) x.getLeft()
+                        : (RBNode<T>) x.getRight();
+            }
         }
         z.setParent(y);
-        if (y == nil) {
+        if (y == null) {
             this.setRoot(z);
         } else if (z.getData().compareTo(y.getData()) == -1) {
             y.setLeft(z);
         } else {
             y.setRight(z);
         }
-        z.setLeft(nil);
-        z.setRight(nil);
+        z.setLeft(null);
+        z.setRight(null);
         z.setRed();
         if (z == this.getRoot()){
             return;
@@ -81,7 +82,7 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
 
     public void insertFixup(RBNode<T> z) {
         while (!z.getParent().isBlack() && z.getParent() != nil) {
-            if (z.getParent() == z.getParent().getParent().getLeft()) {
+            if (z.getParent() == z.getParent().getParent().getLeft() && z.getParent().getParent() != nil) {
                 RBNode<T> y = z.getParent().getParent().getRight();
                 if (!y.isBlack()) {
                     z.getParent().setBlack();
@@ -95,7 +96,7 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
                 z.getParent().setBlack();
                 z.getParent().getParent().setRed();
                 this.rightRotate(z);
-            } else {
+            } else if (z.getParent().getParent() != nil) {
                 RBNode y = z.getParent().getParent().getLeft();
                 if (y != null && !y.isBlack()) {
                     z.getParent().setBlack();
@@ -106,10 +107,15 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
                     z = z.getParent();
                     this.rightRotate(z);
                 }
-                z.getParent().setBlack();
-                z.getParent().getParent().setRed();
+                if (z.getParent() != nil) {
+                    z.getParent().setBlack();
+                }
+                if (z.getParent().getParent() != nil) {
+                    z.getParent().getParent().setRed();
+                }
                 this.leftRotate(z);
             }
+            break;
         }
         this.setRoot(new RBNode<T>(getRoot().getData(),(RBNode) getRoot().getLeft(), (RBNode) getRoot().getRight()));
     }
