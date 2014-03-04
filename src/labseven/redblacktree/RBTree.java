@@ -8,22 +8,24 @@ import static labseven.redblacktree.RBNode.nil;
 
 public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
 
+    private RBNode<T> root;
+
     public RBTree() {
-        this.setRoot(nil);
+        RBTree.this.setRoot(null);
     }
 
     public RBNode<T> getRoot(){
-        return (RBNode) super.getRoot();
+        return (RBNode<T>) super.getRoot();
     }
 
     public void leftRotate(RBNode<T> x) {
-        RBNode<T> y = (RBNode) x.getRight();
+        RBNode<T> y = (RBNode<T>) x.getRight();
         x.setRight(y.getLeft());
-        if (y.getLeft() != nil && y.getLeft() != null) {
+        if (y.getLeft() != null) {
             y.getLeft().setParent(x);
         }
         y.setParent(x.getParent());
-        if (x.getParent() == nil) {
+        if (x.getParent() == null) {
             this.setRoot(y);
         } else if (x == x.getParent().getLeft()) {
             x.getParent().setLeft(y);
@@ -35,13 +37,13 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
     }
 
     public void rightRotate(RBNode<T> x) {
-        RBNode y = (RBNode) x.getLeft();
+        RBNode y = (RBNode<T>) x.getLeft();
         x.setLeft(y.getRight());
         if (y.getRight() != null) {
             y.getRight().setParent(x);
         }
         y.setParent(x.getParent());
-        if (x.getParent() == nil) {
+        if (x.getParent() == null) {
             this.setRoot(y);
         } else if (x == x.getParent().getRight()) {
             x.getParent().setRight(y);
@@ -55,13 +57,11 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
     public void insert(RBNode<T> z) {
         RBNode<T> y = null;
         RBNode<T> x = (RBNode<T>) this.getRoot();
-        while (x != nil) {
-            if (x != null) {
-                y = x;
-                x = (z.getData().compareTo(x.getData()) == -1)
-                        ? (RBNode<T>) x.getLeft()
-                        : (RBNode<T>) x.getRight();
-            }
+        while (x != null) {
+            y = x;
+            x = (z.getData().compareTo(x.getData()) == -1)
+                    ? (RBNode<T>) x.getLeft()
+                    : (RBNode<T>) x.getRight();
         }
         z.setParent(y);
         if (y == null) {
@@ -81,8 +81,8 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
     }
 
     public void insertFixup(RBNode<T> z) {
-        while (!z.getParent().isBlack() && z.getParent() != nil) {
-            if (z.getParent() == z.getParent().getParent().getLeft() && z.getParent().getParent() != nil) {
+        while (!z.getParent().isBlack()) {
+            if (z.getParent() == z.getParent().getParent().getLeft()) {
                 RBNode<T> y = z.getParent().getParent().getRight();
                 if (!y.isBlack()) {
                     z.getParent().setBlack();
@@ -96,7 +96,7 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
                 z.getParent().setBlack();
                 z.getParent().getParent().setRed();
                 this.rightRotate(z);
-            } else if (z.getParent().getParent() != nil) {
+            } else if (z.getParent().getParent() != null) {
                 RBNode y = z.getParent().getParent().getLeft();
                 if (y != null && !y.isBlack()) {
                     z.getParent().setBlack();
@@ -107,16 +107,15 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
                     z = z.getParent();
                     this.rightRotate(z);
                 }
-                if (z.getParent() != nil) {
+                if (z.getParent() != null) {
                     z.getParent().setBlack();
                 }
-                if (z.getParent().getParent() != nil) {
+                if (z.getParent().getParent() != null) {
                     z.getParent().getParent().setRed();
                 }
                 this.leftRotate(z);
             }
-            break;
         }
-        this.setRoot(new RBNode<T>(getRoot().getData(),(RBNode) getRoot().getLeft(), (RBNode) getRoot().getRight()));
+        this.getRoot().setBlack();
     }
 }
