@@ -37,7 +37,7 @@ public class RBNode<T> extends BinaryTreeNode<T>{
         return (RBNode) super.getParent();
     }
 
-    public RBNode getGrandparent() {
+    public RBNode<T> getGrandparent() {
         return this.getParent().getParent();
     }
 
