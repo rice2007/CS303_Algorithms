@@ -88,6 +88,16 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
         }
     }
 
+    @Override
+    public String toString() {
+        if (getRoot() != null) {
+            System.out.println("Printing tree:");
+            return getRoot().toStringPreOrder(".");
+        } else {
+            return "Tree is empty.\n";
+        }
+    }
+
     private boolean searchHelper(RBNode<T> currentNode, RBNode<T> key) {
         if (currentNode == null || currentNode == nil) {
             return false;
@@ -136,15 +146,5 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
         }
         y.setRight(x);
         x.setParent(y);
-    }
-
-    @Override
-    public String toString() {
-        if (getRoot() != null) {
-            System.out.println("Printing tree:");
-            return getRoot().toStringPreOrder(".");
-        } else {
-            return "Tree is empty.\n";
-        }
     }
 }
