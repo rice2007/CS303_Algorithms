@@ -50,9 +50,9 @@ public class BinaryTree<T extends Comparable<T>> {
 	}
 
 	public String toString() {
-        if (root != null) {
+        if (this.root != null) {
             System.out.println("Printing tree:");
-			return root.toStringPreOrder(".");
+			return this.root.toStringPreOrder(".");
 		} else {
 			return "Tree is empty.\n";
 		}
