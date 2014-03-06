@@ -13,7 +13,7 @@ public class RBTreeDriver {
         String line;
         String[] lineArray;
         try {
-            scan = new Scanner(new File("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labseven\\redblacktree\\UPC.csv"));
+            scan = new Scanner(new File("C:\\Users\\Ajay\\IdeaProjects\\CS303_Algorithms\\src\\labseven\\redblacktree\\UPC.csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
