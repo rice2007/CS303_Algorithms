@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labeight/hashmap/HashElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" afterPath="$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/Graphs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labeight/hashmap/HashElement.java" afterPath="$PROJECT_DIR$/src/labeight/hashmap/HashElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java" afterPath="$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -107,7 +106,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" line="29" class="labseven.redblacktree.RBTreeDriver" package="labseven.redblacktree">
+      <breakpoint url="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" line="48" class="labseven.redblacktree.RBTreeDriver" package="labseven.redblacktree">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -122,7 +121,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java" line="19" class="labeight.hashmap.Hashmap" package="labeight.hashmap">
+      <breakpoint url="file://$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java" line="48" class="labeight.hashmap.HashmapDriver" package="labeight.hashmap">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -150,37 +149,47 @@
       <file leaf-file-name="HashElement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+            <state line="37" column="23" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="714">
               <folding>
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hashmap.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Hashmap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="1.012766" vertical-offset="0" max-vertical-offset="952">
+            <state line="47" column="38" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashmapDriver.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Graphs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Notes/Graphs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="56" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashmapDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="884">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="25" column="31" selection-start="697" selection-end="697" vertical-scroll-proportion="0.22978723" vertical-offset="232" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="563" column="40" selection-start="22433" selection-end="22433" vertical-scroll-proportion="0.0" vertical-offset="8806" max-vertical-offset="39984">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -240,8 +249,9 @@
         <option value="$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java" />
         <option value="$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java" />
-        <option value="$PROJECT_DIR$/src/labeight/hashmap/HashElement.java" />
+        <option value="$PROJECT_DIR$/Notes/Graphs" />
         <option value="$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java" />
+        <option value="$PROJECT_DIR$/src/labeight/hashmap/HashElement.java" />
         <option value="$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java" />
       </list>
     </option>
@@ -418,8 +428,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,6 +549,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -564,19 +587,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -716,7 +726,7 @@
     </configuration>
     <configuration default="false" name="Hashmap" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="labeight.hashmap.HashmapDriver" />
-      <option name="VM_PARAMETERS" value="" />
+      <option name="VM_PARAMETERS" value="-Xss2048m" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -833,29 +843,29 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899868" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1430429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14174253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359894" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -872,7 +882,7 @@
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -898,13 +908,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="848" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/labtwo/mergesort/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="1" selection-start="5797" selection-end="5797" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="2295" />
@@ -1087,9 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
-          <folding />
-        </state>
+        <state line="13" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BSTDriver.java">
@@ -1106,18 +1107,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.22207268" vertical-offset="379" max-vertical-offset="1122">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.22207268" vertical-offset="379" max-vertical-offset="1122" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labsix/bst/BinaryTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1904">
-          <folding>
-            <element signature="e#796#797#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="32" column="0" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1904" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTreeDriver.java">
@@ -1129,16 +1124,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="9" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2040">
-          <folding />
-        </state>
+        <state line="83" column="9" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2040" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labseven/redblacktree/RBTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="46" selection-start="3266" selection-end="3266" vertical-scroll-proportion="-0.09152086" vertical-offset="1768" max-vertical-offset="2584">
-          <folding />
-        </state>
+        <state line="104" column="46" selection-start="3266" selection-end="3266" vertical-scroll-proportion="-0.09152086" vertical-offset="1768" max-vertical-offset="2584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfive/linkedlist/LinkedList.java">
@@ -1157,16 +1148,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="474" column="13" selection-start="13961" selection-end="13961" vertical-scroll-proportion="0.0" vertical-offset="7420" max-vertical-offset="21165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="580" column="13" selection-start="23239" selection-end="23239" vertical-scroll-proportion="0.77792734" vertical-offset="8755" max-vertical-offset="39984">
-          <folding />
-        </state>
+        <state line="474" column="13" selection-start="13961" selection-end="13961" vertical-scroll-proportion="0.0" vertical-offset="7420" max-vertical-offset="21165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labfour/quicksort/QuicksortDriver.java">
@@ -1176,34 +1158,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java">
+    <entry file="file://$PROJECT_DIR$/Notes/Graphs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="884">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="56" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashElement.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding>
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-          </folding>
+        <state line="563" column="40" selection-start="22433" selection-end="22433" vertical-scroll-proportion="0.0" vertical-offset="8806" max-vertical-offset="39984">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/Hashmap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="1.012766" vertical-offset="0" max-vertical-offset="952">
+        <state line="47" column="38" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="23" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="714">
+          <folding>
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="697" selection-end="697" vertical-scroll-proportion="0.22978723" vertical-offset="232" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>

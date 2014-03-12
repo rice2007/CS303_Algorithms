@@ -1,0 +1,19 @@
+Graph - a hierarchical data structure in which elements related to an arbitrary number of other elements
+    many-to-many structure
+    nodes connected by edges
+    two nodes adjacent (incident) if they share an edge
+Graph G = (V, E) where V is the set of vertices and E is the set of edges
+    directed - edges have direction
+    undirected graph - edges have no direction
+    weighted graph - edges that have an associated value
+    path - finite sequences of nodes such that each pair of nodes are connected by an edge
+    cycle simple path in which the first and last nodes are connected
+    direct acyclic graph - no cycles with directed edges
+representation
+    adjacency matrix - table wth nodes at columns and rows that gives weighted values at intersections
+        represented as an n by n 2d array of boolean vals
+            true if there is edge
+            must have real vals in weighted graph
+    adjacency list - creates an n-element 1d array (or linked list) of connected nodes
+        more efficient but with more memory
+        uses references to neighbor objects to connect nodes

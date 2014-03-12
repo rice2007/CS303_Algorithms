@@ -2,6 +2,7 @@ package labeight.hashmap;
 
 public class HashElement {
 
+    private boolean collision;
     private int hash;
     private int key;
     private String value;
@@ -9,6 +10,7 @@ public class HashElement {
     public HashElement(int theKey, String theValue) {
         this.key = theKey;
         this.value = theValue;
+        this.collision = false;
         this.hash = 0;
     }
 
@@ -24,7 +26,19 @@ public class HashElement {
         return this.hash;
     }
 
+    public boolean getCollision() {
+        return this.collision;
+    }
+
     public void setHash(int hashKey) {
         this.hash = hashKey;
+    }
+
+    public boolean collided() {
+        if (this.collision) {
+            return this.collision = false;
+        } else {
+            return this.collision = true;
+        }
     }
 }

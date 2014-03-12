@@ -36,6 +36,7 @@ public class Hashmap {
             hashList.remove(hashKey);
             hashList.add(hashKey, element);
             element.setHash(hashKey);
+            element.collided();
            // System.out.println("Key inserted at " + hashKey);
         }
         return element.getValue();
@@ -43,9 +44,9 @@ public class Hashmap {
 
     public String get(int key) {
         int hashKey = hash(key);
-        if (hashKey == hashList.get(hashKey).getHashKey()) {
+        if (!hashList.get(hashKey).getCollision()) {
             return hashList.get(hashKey).getValue();
-        } else if (reHash(hashKey) == hashList.get(reHash(hashKey)).getHashKey()) {
+        } else if (hashList.get(hashKey).getCollision()) {
             return hashList.get(reHash(key)).getValue();
         } else {
             return null;
