@@ -9,12 +9,7 @@ public class HashElement {
     public HashElement(int theKey, String theValue) {
         this.key = theKey;
         this.value = theValue;
-    }
-
-    public HashElement(int theKey, String theValue, int hashKey) {
-        this.key = theKey;
-        this.value = theValue;
-        this.hash = hashKey;
+        this.hash = 0;
     }
 
     public int getKey() {

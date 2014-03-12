@@ -4,11 +4,21 @@ package labeight.hashmap;
 import java.util.LinkedList;
 public class Hashmap {
 
-    private static final int mapSize = 100;
     private LinkedList<HashElement> hashList = new LinkedList<>();
 
+    private static int mapSize;
+    private final static int defaultMapSize = 100;
+
     public Hashmap() {
-        for (int i = 0; i < 99; i++) {
+        this.mapSize = defaultMapSize;
+        for (int i = 0; i < mapSize; i++) {
+            this.hashList.add(i, null);
+        }
+    }
+
+    public Hashmap(int size) {
+        this.mapSize = size;
+        for (int i = 0; i < mapSize; i++) {
             this.hashList.add(i, null);
         }
     }
