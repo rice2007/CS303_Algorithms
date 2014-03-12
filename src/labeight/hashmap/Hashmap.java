@@ -10,14 +10,14 @@ public class Hashmap {
     private final static int defaultMapSize = 100;
 
     public Hashmap() {
-        this.mapSize = defaultMapSize;
+        mapSize = defaultMapSize;
         for (int i = 0; i < mapSize; i++) {
             this.hashList.add(i, null);
         }
     }
 
     public Hashmap(int size) {
-        this.mapSize = size;
+        mapSize = size;
         for (int i = 0; i < mapSize; i++) {
             this.hashList.add(i, null);
         }
@@ -25,28 +25,30 @@ public class Hashmap {
 
     public String put(int key, String value) {
         HashElement element = new HashElement(key, value);
-        int hashKey = element.getKey();
-        hashKey = hash(hashKey);
+        int hashKey = hash(key);
         if (hashList.get(hashKey) == null) {
+            hashList.remove(hashKey);
             hashList.add(hashKey, element);
             element.setHash(hashKey);
-            System.out.println("Key inserted at " + hashKey);
+            //System.out.println("Key inserted at " + hashKey);
         } else {
             hashKey = reHash(hashKey);
+            hashList.remove(hashKey);
             hashList.add(hashKey, element);
             element.setHash(hashKey);
-            System.out.println("Key inserted at " + hashKey);
+           // System.out.println("Key inserted at " + hashKey);
         }
         return element.getValue();
     }
 
     public String get(int key) {
         int hashKey = hash(key);
-        if (hashKey == hashList.get(key).getHashKey()) {
-            return hashList.get(key).getValue();
-        } else {
-            hashKey = reHash(hashKey);
+        if (hashKey == hashList.get(hashKey).getHashKey()) {
             return hashList.get(hashKey).getValue();
+        } else if (reHash(hashKey) == hashList.get(reHash(hashKey)).getHashKey()) {
+            return hashList.get(reHash(key)).getValue();
+        } else {
+            return null;
         }
     }
 

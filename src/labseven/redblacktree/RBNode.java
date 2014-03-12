@@ -1,12 +1,11 @@
 package labseven.redblacktree;
 
 
-import labsix.bst.BinaryTree;
 import labsix.bst.BinaryTreeNode;
 
 public class RBNode<T> extends BinaryTreeNode<T>{
 
-    protected static RBNode nil = new RBNode();
+    public static RBNode nil = new RBNode();
     private boolean blackFlag;
     private RBNode<T> left;
     private RBNode<T> right;

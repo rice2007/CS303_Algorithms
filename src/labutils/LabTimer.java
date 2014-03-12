@@ -7,9 +7,9 @@ public class LabTimer {
     private static long timeElapsed;
 
     public LabTimer() {
-        this.timeInitial = 0;
-        this.timeFinal = 0;
-        this.timeElapsed = 0;
+        timeInitial = 0;
+        timeFinal = 0;
+        timeElapsed = 0;
     }
 
     /**

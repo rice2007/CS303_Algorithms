@@ -1,9 +1,7 @@
 package labseven.redblacktree;
 
 
-import labsix.bst.BST;
 import labsix.bst.BinaryTree;
-import labsix.bst.BinaryTreeNode;
 
 import static labseven.redblacktree.RBNode.nil;
 
@@ -45,7 +43,33 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
         this.insertFixup(z);
     }
 
-    public void insertFixup(RBNode<T> z) {
+    public boolean search(RBNode<T> key) {
+        if (this.getRoot() == null) {
+            return false;
+        } else {
+            return searchHelper(this.getRoot(), key);
+        }
+    }
+
+    public boolean search(T key) {
+        if (this.getRoot() == null) {
+            return false;
+        } else {
+            RBNode<T> keyNode = new RBNode<>(key);
+            return searchHelper(this.getRoot(), keyNode);
+        }
+    }
+
+    @Override
+    public String toString() {
+        if (getRoot() != null) {
+            System.out.println("Printing tree:");
+            return getRoot().toStringPreOrder(".");
+        } else {
+            return "Tree is empty.\n";
+        }
+    }
+    private void insertFixup(RBNode<T> z) {
         while (!z.getParent().isBlack()) {
             if (z.getParent() == z.getParent().getParent().getLeft()) {
                 RBNode<T> y = z.getParent().getParent().getRight();
@@ -80,29 +104,11 @@ public class RBTree<T extends Comparable<T>> extends BinaryTree<T> {
         this.getRoot().setBlack();
     }
 
-    public boolean search(RBNode<T> key) {
-        if (this.getRoot() == null) {
-            return false;
-        } else {
-            return searchHelper(this.getRoot(), key);
-        }
-    }
-
-    @Override
-    public String toString() {
-        if (getRoot() != null) {
-            System.out.println("Printing tree:");
-            return getRoot().toStringPreOrder(".");
-        } else {
-            return "Tree is empty.\n";
-        }
-    }
-
     private boolean searchHelper(RBNode<T> currentNode, RBNode<T> key) {
         if (currentNode == null || currentNode == nil) {
             return false;
         } else if (key.getData().compareTo(currentNode.getData()) == 0) {
-            System.out.println(key.getValue());
+            System.out.println(currentNode.getValue());
             return true;
         }
         return (key.getData().compareTo(currentNode.getData()) == -1)
