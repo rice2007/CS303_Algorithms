@@ -11,7 +11,6 @@ public class Graph {
     LinkedList<LinkedList<Integer>> graph;
 
     public Graph() {
-
     }
 
     public Graph(BufferedReader in) throws IOException {
