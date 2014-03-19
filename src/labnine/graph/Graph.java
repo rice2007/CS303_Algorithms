@@ -8,7 +8,7 @@ public class Graph {
 
     int e;
     int v;
-    LinkedList<Integer>[] graph;
+    LinkedList<LinkedList<Integer>> graph;
 
     public Graph() {
 
@@ -17,9 +17,9 @@ public class Graph {
     public Graph(BufferedReader in) throws IOException {
         v = Integer.parseInt(in.readLine());
         e = Integer.parseInt(in.readLine());
-        graph = new LinkedList[e];
+        graph = new LinkedList<>();
         for (int i = 0; i < e; i++) {
-            graph[i] = new LinkedList<>();
+            graph.add(i, new LinkedList<Integer>());
         }
     }
 
@@ -28,14 +28,14 @@ public class Graph {
     }
 
     public Iterable<Integer> adj(int v) {
-        return graph[v];
+        return graph.get(v);
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < v; i++) {
             sb.append("Vertex " + i + ": ");
-            for (int j : graph[i]) {
+            for (int j : graph.get(i)) {
                 sb.append(j + " ");
             }
             sb.append("\n");

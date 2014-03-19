@@ -10,12 +10,7 @@
 
 package labnine.graph;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.Stack;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class BreadthFirstPath {
@@ -33,7 +28,7 @@ public class BreadthFirstPath {
      * @param G the graph
      * @param s the source vertex
      */
-    public BreadthFirstPath(Graph G, int s) throws IOException {
+    public BreadthFirstPath(Graph G, int s) {
         source = s;
         marked = new boolean[G.v];
         edgeTo = new int[G.v];
@@ -49,12 +44,20 @@ public class BreadthFirstPath {
      * @param iSources the source vertices
      */
     public BreadthFirstPath(Graph G, Iterable<Integer> iSources) {
-        sources = iSources;
+/*        sources = iSources;
         marked = new boolean[G.v];
         edgeTo = new int[G.v];
         distTo = new int[G.v];
         queue = new LinkedBlockingQueue<>();
-        this.bfs(G, sources);
+        for (int i = 0; i < G.v; i++) {
+            distTo[i] = INFINITY;
+        }
+        this.bfs(G, sources);*/
+        sources = iSources;
+        for (int i : sources) {
+            BreadthFirstPath bfp = new BreadthFirstPath(G, i);
+        }
+
     }
 
 
@@ -62,19 +65,19 @@ public class BreadthFirstPath {
     private void bfs(Graph G, int s) {
         for (int u = 0; u < G.v; u++) {
             marked[u] = false;
-            edgeTo[u] = INFINITY;
-            distTo[u] = INFINITY;
+            edgeTo[u] = 0;
+            distTo[u] = 0;
         }
         queue.add(s);
         while (!queue.isEmpty()) {
             int u = queue.remove();
-            for (int i = 0; i < G.graph[u].size(); i++) {
-                 if (!marked[u]) {
-                    if (edgeTo[G.graph[u].get(i)] == INFINITY) {
-                        edgeTo[G.graph[u].get(i)] = u;
+            for (int i : G.adj(u)) {
+                 if (!marked[i]) {
+                    if (edgeTo[i] == 0) {
+                        edgeTo[i] = u;
                     }
                     distTo[i] = distTo[u]++;
-                    queue.add(G.graph[u].get(i));
+                    queue.add(i);
                  }
             }
             marked[u] = true;
@@ -91,13 +94,13 @@ public class BreadthFirstPath {
         }
         while (!queue.isEmpty()) {
             int u = queue.remove();
-            for (int i : G.graph[u]) {
+            for (int i : G.adj(u)) {
                 if (!marked[u]) {
-                    if (edgeTo[G.graph[u].get(i)] == INFINITY) {
-                        edgeTo[G.graph[u].get(i)] = u;
+                    if (edgeTo[i] == INFINITY) {
+                        edgeTo[i] = u;
                     }
                     distTo[i] = distTo[u]++;
-                    queue.add(G.graph[u].get(i));
+                    queue.add(i);
                 }
             }
             marked[u] = true;
@@ -110,7 +113,7 @@ public class BreadthFirstPath {
      * @return true if there is a path, and false otherwise
      */
     public boolean hasPathTo(int v) {
-        return (distTo(v) != INFINITY);
+        return (distTo(v) != 0);
     }
 
     /**
@@ -136,11 +139,12 @@ public class BreadthFirstPath {
      * @return the sequence of vertices on a shortest path, as an Iterable
      */
     public Iterable<Integer> pathTo(int v) {
-
-        if (v != source) {
-            return pathTo(edgeTo[v]);
+        Stack path = new Stack();
+        for (int i = v; i != source ; i = edgeTo[i]) {
+            path.push(i);
         }
-        return null;
+        path.push(source);
+        return path;
     }
 
 }

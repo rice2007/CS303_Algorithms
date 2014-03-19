@@ -2,7 +2,6 @@ package labnine.graph;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class UndirectedGraph extends Graph {
 
@@ -12,7 +11,7 @@ public class UndirectedGraph extends Graph {
 
     @Override
     public void addEdge(int v, int w) {
-        graph[v].add(w);
-        graph[w].add(v);
+        graph.get(v).add(w);
+        graph.get(w).add(v);
     }
 }
