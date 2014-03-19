@@ -10,6 +10,10 @@ public class Graph {
     int v;
     LinkedList<Integer>[] graph;
 
+    public Graph() {
+
+    }
+
     public Graph(BufferedReader in) throws IOException {
         v = Integer.parseInt(in.readLine());
         e = Integer.parseInt(in.readLine());
