@@ -1,3 +1,6 @@
+package labten.dfs;
+
+import labnine.graph.Graph;
 
 public class DepthFirstPaths {
     private boolean[] marked;    // marked[v] = is there an s-v path?
@@ -40,7 +43,7 @@ public class DepthFirstPaths {
     }
 
     /**
-     * Unit tests the <tt>DepthFirstPaths</tt> data type.
+     * Unit tests the <tt>labten.dfs.DepthFirstPaths</tt> data type.
      */
     
 
