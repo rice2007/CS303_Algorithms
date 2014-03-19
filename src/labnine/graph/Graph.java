@@ -30,6 +30,18 @@ public class Graph {
         return graph.get(v);
     }
 
+    public int getV() {
+        return v;
+    }
+
+    public int getE() {
+        return e;
+    }
+
+    public LinkedList<LinkedList<Integer>> getGraph() {
+        return graph;
+    }
+
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < v; i++) {

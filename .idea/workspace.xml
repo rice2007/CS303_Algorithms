@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96ca2e-bdff-4609-9b61-b1f70a101562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/labten/dfs/DFSDriver.java" />
-      <change type="DELETED" beforePath="C:\Users\Ajay\IdeaProjects\CS303_Algorithms\src\labten\dfs\dfs provided.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labten/dfs/DFSDriver.java" afterPath="$PROJECT_DIR$/src/labten/dfs/DFSDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java" afterPath="$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/labnine/graph/Graph.java" afterPath="$PROJECT_DIR$/src/labnine/graph/Graph.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS303_Algorithms.iws" />
@@ -150,6 +151,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java" line="47" class="labten.dfs.DepthFirstPaths" package="labten.dfs">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -159,35 +175,74 @@
     <favorites_list name="CS303_Algorithms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BreadthFirstPath.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/labnine/graph/BreadthFirstPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="9" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepthFirstPaths.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="4" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.33197555" vertical-offset="364" max-vertical-offset="935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DFSDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/labten/dfs/DFSDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/labnine/graph/Graph.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="1020">
+                  <folding>
+                    <element signature="e#668#669#0" expanded="true" />
+                    <element signature="e#692#693#0" expanded="true" />
+                    <element signature="e#717#718#0" expanded="true" />
+                    <element signature="e#741#742#0" expanded="true" />
+                    <element signature="e#798#799#0" expanded="true" />
+                    <element signature="e#826#827#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DFSDriver.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/labten/dfs/DFSDriver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="32" selection-start="390" selection-end="390" vertical-scroll-proportion="0.398827" vertical-offset="102" max-vertical-offset="527">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DepthFirstPaths.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="50" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1649">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2361#2362#0" expanded="true" />
+                    <element signature="e#2390#2391#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="BreadthFirstPath.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/labnine/graph/BreadthFirstPath.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="101" column="7" selection-start="3148" selection-end="3148" vertical-scroll-proportion="1.143695" vertical-offset="1174" max-vertical-offset="2465">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GraphDriver.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/labnine/graph/GraphDriver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -249,11 +304,11 @@
         <option value="$PROJECT_DIR$/src/labnine/graph/DirectedGraph.java" />
         <option value="$PROJECT_DIR$/src/labnine/graph/tinyDG.txt" />
         <option value="$PROJECT_DIR$/src/labnine/graph/UndirectedGraph.java" />
-        <option value="$PROJECT_DIR$/src/labnine/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/labnine/graph/BreadthFirstPath.java" />
         <option value="$PROJECT_DIR$/src/labnine/graph/GraphDriver.java" />
-        <option value="$PROJECT_DIR$/src/labten/dfs/DFSDriver.java" />
+        <option value="$PROJECT_DIR$/src/labnine/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java" />
+        <option value="$PROJECT_DIR$/src/labten/dfs/DFSDriver.java" />
       </list>
     </option>
   </component>
@@ -394,24 +449,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS303_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hashmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -782,6 +819,14 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="CS303_Algorithms" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <list size="10">
@@ -865,7 +910,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -878,14 +923,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14174253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33550066" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32769832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35500652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50585175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1145,7 +1190,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Graphs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
+        <state line="7" column="56" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/HashMap.java">
@@ -1174,30 +1221,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labnine/graph/tinyDG.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="32" selection-end="32" vertical-scroll-proportion="0.18304172" vertical-offset="0" max-vertical-offset="743">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/labeight/hashmap/HashmapDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="9" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/labnine/graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/labnine/graph/DirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
@@ -1209,31 +1235,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labnine/graph/GraphDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/labnine/graph/DirectedGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="47" selection-start="1793" selection-end="1793" vertical-scroll-proportion="0.5881561" vertical-offset="175" max-vertical-offset="918">
+        <state line="19" column="28" selection-start="495" selection-end="495" vertical-scroll-proportion="0.62321794" vertical-offset="0" max-vertical-offset="491">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/labten/dfs/DFSDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/labnine/graph/GraphDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="18" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labnine/graph/tinyDG.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="32" selection-end="32" vertical-scroll-proportion="0.20425531" vertical-offset="40" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labnine/graph/BreadthFirstPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="9" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2465">
+        <state line="101" column="7" selection-start="3148" selection-end="3148" vertical-scroll-proportion="1.143695" vertical-offset="1174" max-vertical-offset="2465">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labnine/graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/labten/dfs/DepthFirstPaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.33197555" vertical-offset="364" max-vertical-offset="935">
-          <folding />
+        <state line="50" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1649">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#2390#2391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/labten/dfs/DFSDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="390" selection-end="390" vertical-scroll-proportion="0.398827" vertical-offset="102" max-vertical-offset="527">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

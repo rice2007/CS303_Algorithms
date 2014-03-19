@@ -2,10 +2,14 @@ package labten.dfs;
 
 import labnine.graph.Graph;
 
+import java.util.Stack;
+
 public class DepthFirstPaths {
     private boolean[] marked;    // marked[v] = is there an s-v path?
+    private int[] distTo;
     private int[] edgeTo;        // edgeTo[v] = last edge on s-v path
-    private final int s;         // source vertex
+    private final int source;         // source vertex
+    private int time;
 
     /**
      * Computes a path between <tt>s</tt> and every other vertex in graph <tt>G</tt>.
@@ -13,14 +17,40 @@ public class DepthFirstPaths {
      * @param s the source vertex
      */
     public DepthFirstPaths(Graph G, int s) {
-        //initialize marked, edgeTo and s
+        marked = new boolean[G.getV()];
+        distTo = new int[G.getV()];
+        edgeTo = new int[G.getV()];
+        source = s;
         dfs(G, s);
     }
 
     // depth first search from v
     private void dfs(Graph G, int v) {
-        //write your dfs code here. Edit edgeTo and marked whenever necessary. It would be easy to use recursion in this function
-		}
+        for (int u = 0; u < G.getV(); u++) {
+            marked[u] = false;
+            edgeTo[u] = 0;
+        }
+        time = 0;
+        for (int u = 0; u < G.getV(); u++) {
+            if (!marked[u]) {
+                DFSVisit(G, u);
+            }
+        }
+    }
+
+    private void DFSVisit(Graph G, int u) {
+        time++;
+        distTo[u] = time;
+        for (int v : G.adj(u)) {
+            if (!marked[v]) {
+                edgeTo[v] = u;
+                marked[v] = true;
+                DFSVisit(G, v);
+            }
+        }
+        marked[u] = true;
+        time++;
+    }
 
     /**
      * Is there a path between the source vertex <tt>s</tt> and vertex <tt>v</tt>?
@@ -28,7 +58,7 @@ public class DepthFirstPaths {
      * @return <tt>true</tt> if there is a path, <tt>false</tt> otherwise
      */
     public boolean hasPathTo(int v) {
-        //return something that represents the above task.
+        return marked[v];
     }
 
     /**
@@ -39,7 +69,19 @@ public class DepthFirstPaths {
      *   <tt>s</tt> and vertex <tt>v</tt>, as an Iterable
      */
     public Iterable<Integer> pathTo(int v) {
-        //implement your code
+        if (!this.hasPathTo(v)) {
+            return null;
+        }
+        Stack path = new Stack();
+        for (int i = v; i != source ; i = edgeTo[i]) {
+            path.push(i);
+        }
+        path.push(source);
+        return path;
+    }
+
+    public int getSource() {
+        return source;
     }
 
     /**
