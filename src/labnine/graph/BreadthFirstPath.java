@@ -16,6 +16,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class BreadthFirstPath {
     private static final int INFINITY = Integer.MAX_VALUE;
     private boolean[] marked;  // marked[v] = is there an s-v path
+    private int tEdges;
     private int source;
     private int[] edgeTo;      // edgeTo[v] = previous edge on s-v path
     private int[] distTo;      // distTo[v] = number of edges s-v path
@@ -34,6 +35,7 @@ public class BreadthFirstPath {
         edgeTo = new int[G.v];
         distTo = new int[G.v];
         queue = new LinkedBlockingQueue<>();
+        tEdges = G.e;
         this.bfs(G, s);
     }
 
@@ -44,20 +46,10 @@ public class BreadthFirstPath {
      * @param iSources the source vertices
      */
     public BreadthFirstPath(Graph G, Iterable<Integer> iSources) {
-/*        sources = iSources;
-        marked = new boolean[G.v];
-        edgeTo = new int[G.v];
-        distTo = new int[G.v];
-        queue = new LinkedBlockingQueue<>();
-        for (int i = 0; i < G.v; i++) {
-            distTo[i] = INFINITY;
-        }
-        this.bfs(G, sources);*/
         sources = iSources;
         for (int i : sources) {
             BreadthFirstPath bfp = new BreadthFirstPath(G, i);
         }
-
     }
 
 
@@ -113,7 +105,8 @@ public class BreadthFirstPath {
      * @return true if there is a path, and false otherwise
      */
     public boolean hasPathTo(int v) {
-        return (distTo(v) != 0);
+        int distance = distTo(v);
+        return (distance != INFINITY && distance != 0);
     }
 
     /**
@@ -128,6 +121,9 @@ public class BreadthFirstPath {
             counter++;
             v = edgeTo[v];
             distTo[v] = counter;
+            if (counter > tEdges) {
+                return INFINITY;
+            }
         }
         return counter;
     }
@@ -139,6 +135,9 @@ public class BreadthFirstPath {
      * @return the sequence of vertices on a shortest path, as an Iterable
      */
     public Iterable<Integer> pathTo(int v) {
+        if (!this.hasPathTo(v)) {
+            return null;
+        }
         Stack path = new Stack();
         for (int i = v; i != source ; i = edgeTo[i]) {
             path.push(i);

@@ -11,7 +11,6 @@ public class Graph {
     LinkedList<LinkedList<Integer>> graph;
 
     public Graph() {
-
     }
 
     public Graph(BufferedReader in) throws IOException {
@@ -29,6 +28,18 @@ public class Graph {
 
     public Iterable<Integer> adj(int v) {
         return graph.get(v);
+    }
+
+    public int getV() {
+        return v;
+    }
+
+    public int getE() {
+        return e;
+    }
+
+    public LinkedList<LinkedList<Integer>> getGraph() {
+        return graph;
     }
 
     public String toString() {
