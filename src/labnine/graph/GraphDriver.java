@@ -3,13 +3,12 @@ package labnine.graph;
 import labutils.LabTimer;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class GraphDriver  {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
         LabTimer timer = new LabTimer();
         BufferedReader br = new BufferedReader(
                 new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labnine\\graph\\largeG.txt"));
