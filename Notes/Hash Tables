@@ -1,0 +1,6 @@
+Pros:
+    Look up in near constant time
+    Smaller space complexity vs tree
+Cons:
+    Possible collisions
+    Linear search for min and max vals
