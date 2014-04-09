@@ -30,12 +30,12 @@ public class Driver {
 
             System.out.println("MaxHeap Sort iteration " + power + ": " );
             startTimer();
-            Heapsort.heapSort(maxArray, maxComp);
+            HeapSort.heapSort(maxArray, maxComp);
             stopTimer();
 
             System.out.println("MinHeap Sort iteration " + power + ": " );
             startTimer();
-            Heapsort.heapSort(minArray, minComp);
+            HeapSort.heapSort(minArray, minComp);
             stopTimer();
 
             System.out.println("Insertion Sort iteration " + power + ": " );

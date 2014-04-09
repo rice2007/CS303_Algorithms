@@ -2,7 +2,7 @@ package labfour.quicksort;
 
 import labone.insertionsort.InsertionSort;
 import labthree.heapsort.Greater;
-import labthree.heapsort.Heapsort;
+import labthree.heapsort.HeapSort;
 import labtwo.mergesort.MergeSort;
 
 import java.util.Arrays;
@@ -42,7 +42,7 @@ public class QuicksortDriver {
 
             System.out.println("Maxheapsort iteration " + power + ": ");
             startTimer();
-            Heapsort.heapSort(hArray, maxComp);
+            HeapSort.heapSort(hArray, maxComp);
             stopTimer();
 
             System.out.println("Quicksort iteration " + power + ": ");
