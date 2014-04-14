@@ -2,55 +2,38 @@ package labeleven.minspantree.prim;
 
 import labnine.graph.WeightedGraph;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Kruskal {
 
-    private float totalWeight;
-    private HashMap<Integer, Integer> kPath;
-    private LinkedList<Integer> vSet;
+    private double totalWeight;
+    private HashMap<Integer, ArrayList<Integer>> kPath;
+    private LinkedList<Integer> A;
+    private StringBuilder sb;
 
     public Kruskal(WeightedGraph G) {
+        totalWeight = 0.0;
         kPath = new HashMap<>();
-        vSet = new LinkedList<>();
-        for (int i = 0; i < G.getV(); i++) {
-            vSet.add(i);
-        }
-        MSTKruskal(G);
-    }
-
-    public void MSTKruskal(WeightedGraph G) {
-        PriorityQueue<Float> wQueue = new PriorityQueue<>();
-        for (int i = 0; i < G.getV(); i++) {
-            for (float weight : G.edges(i)) {
-                wQueue.add(weight);
+        A = new LinkedList<>();
+        sb = new StringBuilder();
+        sb.append("Kruskal's algorithm\n");
+        for (WeightedGraph.Edge edge : G.sortedEdges()) {
+            if (!A.contains(edge.getvTwo())) {
+                A.add(edge.getvTwo());
+                totalWeight += edge.getWeight();
+                sb.append(edge.getvOne() + "-" + edge.getWeight() + "-" + ">" + edge.getvTwo() + " ");
             }
-        }
-        while (!vSet.isEmpty() || !wQueue.isEmpty()) {
-            float weight = wQueue.remove();
-            for (int i = 0; i < G.getV(); i++) {
-                for (int vertex : vSet) {
-                    if (weight == G.edges(i)) {
-                        kPath.put(i, vertex);
-                        totalWeight += weight;
-                        vSet.remove(vertex);
-                        break;
-                    }
-                }
+            if (A.size() == G.getV()) {
+                break;
             }
         }
     }
 
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (Integer vertex : kPath.keySet()) {
-            sb.append(vertex + " to ");
-            sb.append(kPath.get(vertex) + "\n");
-        }
+        sb.append("\nTotal weight: " + totalWeight);
         return sb.toString();
     }
+
 
 }
 

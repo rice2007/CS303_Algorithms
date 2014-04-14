@@ -1,0 +1,15 @@
+Index: src/labeleven/minspantree/prim/PrimAlgorithm.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/labeleven/minspantree/prim/PrimAlgorithm.java	(revision )
++++ src/labeleven/minspantree/prim/PrimAlgorithm.java	(revision )
+@@ -72,6 +72,7 @@
+         for (int i = 0; i < queue.size(); i++) {
+             if (G.getWeight(source, queue.get(i)) <= weight) {
+                 weight = G.getWeight(source, queue.get(i));
++                key[queue.get(i)] = weight;
+                 index = i;
+             }
+         }

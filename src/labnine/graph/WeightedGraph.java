@@ -4,30 +4,28 @@ import labnine.graph.Graph;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.TreeMap;
+import java.util.*;
 
 public class WeightedGraph extends Graph {
 
-    private float[][] weight;
-    LinkedList<LinkedList<Float>> edges;
+    private double[][] weight;
+    private LinkedList<Edge> vSet;
+    LinkedList<LinkedList<Double>> edges;
 
-    public static class Edge extends HashMap<Integer, Float> {
+    public static class Edge extends HashMap<Integer, Double> {
 
         private final int vOne;
         private final int vTwo;
-        private final float weight;
+        private final double weight;
 
-        public Edge(int first, int second, float edgeWeight) {
+        public Edge(int first, int second, double edgeWeight) {
             vOne = first;
             vTwo = second;
             weight = edgeWeight;
             put(vTwo, weight);
         }
 
-        public float getWeight() {
+        public double getWeight() {
             return get(vTwo);
         }
 
@@ -42,26 +40,23 @@ public class WeightedGraph extends Graph {
 
     public WeightedGraph(BufferedReader in) throws IOException {
         super(in);
-        weight = new float[e][e];
+        weight = new double[e][e];
+        vSet = new LinkedList<>();
         edges = new LinkedList<>();
-        for (int i = 0; i < v; i++) {
-            edges.add(i, new LinkedList<Float>());
-            for (int j = 0; j < v; j++) {
-                edges.get(i).add(j, null);
-            }
+        for (int i = 0; i < e; i++) {
+            vSet.add(new Edge(0, 0, Double.MIN_VALUE));
         }
         String[] str;
-        for (int i = 0; i < v; i++) {
-            str = in.readLine().split(" ");
-            Edge e = new Edge(Integer.parseInt(str[0]), Integer.parseInt(str[1]), Float.parseFloat(str[2]));
-            Edge f = new Edge(Integer.parseInt(str[1]), Integer.parseInt(str[0]), Float.parseFloat(str[2]));
-            graph.get(Integer.parseInt(str[0])).add(Integer.parseInt(str[1]));
-            weight[Integer.parseInt(str[0])][Integer.parseInt(str[1])] = Float.parseFloat(str[2]);
-            addEdge(e);
+        for (int i = 0; i < e; i++) {
+            str = in.readLine().replaceAll("(^\\s+|\\s+$)", "").split("\\s+");
+            graph.get(Integer.parseInt(str[0].trim())).add(Integer.parseInt(str[1].trim()));
+            weight[Integer.parseInt(str[0].trim())][Integer.parseInt(str[1].trim())] = Double.parseDouble(str[2].trim());
+            sortWeights(new Edge(Integer.parseInt(str[0].trim()), Integer.parseInt(str[1].trim()),
+                    Double.parseDouble(str[2].trim())));
         }
     }
 
-    public float getWeight(int u, int v) {
+    public double getWeight(int u, int v) {
         return weight[u][v];
     }
 
@@ -69,7 +64,41 @@ public class WeightedGraph extends Graph {
         edges.get(e.getvOne()).set(e.getvTwo(), e.getWeight());
     }
 
-    public LinkedList<Float> edges(int vertex) {
+    public LinkedList<Double> edges(int vertex) {
         return edges.get(vertex);
+    }
+
+    public LinkedList<Edge> sortedEdges() {
+        return vSet;
+    }
+
+    private void sortWeights(Edge edge) {
+        if (vSet.get(0).getWeight() == Double.MIN_VALUE) {
+            vSet.set(0, edge);
+        } else if (vSet.get(1).getWeight() == Double.MIN_VALUE) {
+            if (vSet.get(0).getWeight() < edge.getWeight()) {
+                vSet.set(1, edge);
+            } else {
+                vSet.add(0, edge);
+                vSet.remove(vSet.size() - 1);
+            }
+        } else {
+            for (int i = 0; i < vSet.size() - 1; i++) {
+                if (vSet.get(i).getWeight() > edge.getWeight()) {
+                    vSet.add(i, edge);
+                    vSet.remove(vSet.size() - 1);
+                    break;
+                } else if (vSet.get(i).getWeight() < edge.getWeight() && vSet.get(i + 1).getWeight() > edge.getWeight()) {
+                    vSet.add(i + 1, edge);
+                    vSet.remove(vSet.size() - 1);
+                    break;
+                } else if (vSet.get(i).getWeight() < edge.getWeight() && vSet.get(i + 1).getWeight() == Double.MIN_VALUE) {
+                    vSet.set(i + 1, edge);
+                    break;
+                } else if (i == vSet.size() - 1) {
+                    vSet.set(i, edge);
+                }
+            }
+        }
     }
 }

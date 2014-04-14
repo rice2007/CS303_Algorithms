@@ -11,38 +11,71 @@ import java.util.HashMap;
 public class MSTDriver {
 
     public static void main(String[] args) throws IOException{
-//        BufferedReader br = new BufferedReader(new FileReader("mediumGraph.txt"));
-//        WeightedGraph mGraph = new WeightedGraph(br);
-//        LabTimer timer = new LabTimer();
-//        timer.startTimer();
-//        System.out.print("Medium timer: ");
-//        PrimAlgorithm mpa = new PrimAlgorithm(mGraph);
-//        timer.stopTimer();
-//
-//        br = new BufferedReader(new FileReader("LargeGraph.txt"));
-//        WeightedGraph lGraph = new WeightedGraph(br);
-//        timer.startTimer();
-//        System.out.print("Large timer: ");
-//        PrimAlgorithm lpa = new PrimAlgorithm(lGraph);
-//        timer.stopTimer();
-//
-//        br = new BufferedReader(new FileReader("XtraLargeGraph.txt"));
-//        WeightedGraph xGraph = new WeightedGraph(br);
-//        timer.startTimer();
-//        System.out.print("XL timer: ");
-//        PrimAlgorithm xpa = new PrimAlgorithm(xGraph);
-//        timer.stopTimer();
 
-        HashMap<Integer, WeightedGraph.Edge> map = new HashMap<>();
-        map.put(10,new WeightedGraph.Edge(10, 15, 5));
-        map.put(3,new WeightedGraph.Edge(3, 9, 6));
-        map.put(18,new WeightedGraph.Edge(18, 54, 36));
-        System.out.println(map.entrySet());
-        System.out.println(map.get(10).get(15));
+        LabTimer timer = new LabTimer();
+        timer.startTimer();
+        timer.stopTimer();
 
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labeleven\\minspantree\\prim\\tinyGraph.txt"));
+/*        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labeleven\\minspantree\\prim\\mediumGraph.txt"));
         WeightedGraph mGraph = new WeightedGraph(br);
-        Kruskal k = new Kruskal(mGraph);
-        System.out.println(k);
+
+        System.out.print("Medium timer Prim: ");
+        timer.startTimer();
+        PrimAlgorithm mpa = new PrimAlgorithm(mGraph);
+        System.out.println(mpa);
+        timer.stopTimer();
+
+
+        System.out.print("Medium timer Kruskal: ");
+        timer.startTimer();
+        Kruskal mK = new Kruskal(mGraph);
+        System.out.println(mK);
+        timer.stopTimer();
+
+
+
+        br = new BufferedReader(new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labeleven\\minspantree\\prim\\LargeGraph.txt"));
+        WeightedGraph lGraph = new WeightedGraph(br);
+        System.out.print("Large timer Prim: ");
+        timer.startTimer();
+        PrimAlgorithm lpa = new PrimAlgorithm(lGraph);
+        System.out.println(lpa);
+        timer.stopTimer();
+
+        System.out.print("Large timer Kruskal: ");
+        timer.startTimer();
+        Kruskal lK = new Kruskal(lGraph);
+        System.out.print(lK);
+        timer.stopTimer();*/
+
+        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labeleven\\minspantree\\prim\\XtraLargeGraph.txt"));
+        WeightedGraph xGraph = new WeightedGraph(br);
+        System.out.print("XL timer Prim: ");
+        timer.startTimer();
+        PrimAlgorithm xpa = new PrimAlgorithm(xGraph);
+        System.out.println(xpa);
+        timer.stopTimer();
+
+
+        System.out.print("XL timer Kruskal: ");
+        timer.startTimer();
+        Kruskal xK = new Kruskal(xGraph);
+        System.out.println(xK);
+        timer.stopTimer();
+
+        br = new BufferedReader(new FileReader("C:\\Users\\Ajay\\Documents\\GitHub\\CS303_Algorithms\\src\\labeleven\\minspantree\\prim\\tinyGraph.txt"));
+        WeightedGraph tGraph = new WeightedGraph(br);
+        System.out.println("Tiny timer Prim: ");
+        timer.startTimer();
+        PrimAlgorithm tpa = new PrimAlgorithm(tGraph);
+        System.out.println(tpa);
+        timer.stopTimer();
+
+        System.out.println("Tiny timer Kruskal: ");
+        timer.startTimer();
+        Kruskal tK = new Kruskal(tGraph);
+        System.out.println(tK);
+        timer.stopTimer();
+
     }
 }

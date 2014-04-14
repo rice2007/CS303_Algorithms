@@ -17,7 +17,7 @@ public class Graph {
         v = Integer.parseInt(in.readLine());
         e = Integer.parseInt(in.readLine());
         graph = new LinkedList<>();
-        for (int i = 0; i < e; i++) {
+        for (int i = 0; i < v; i++) {
             graph.add(i, new LinkedList<Integer>());
         }
     }

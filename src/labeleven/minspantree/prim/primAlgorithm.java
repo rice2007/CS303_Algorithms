@@ -4,20 +4,25 @@ package labeleven.minspantree.prim;
 import labnine.graph.Graph;
 import labnine.graph.WeightedGraph;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 public class PrimAlgorithm {
 
-    private final float[] key;
+    private final double[] key;
     private final int NIL = Integer.MIN_VALUE;
     private final int INFINITY = Integer.MAX_VALUE;
     private final int[] predecessor;
+    private double totalWeight;
+    private StringBuilder sb;
+
 
     public PrimAlgorithm(WeightedGraph G) {
-        key = new float[G.getV()];
+        key = new double[G.getV()];
         predecessor = new int[G.getV()];
+        sb = new StringBuilder();
         primAlgo(G, 0);
     }
 
@@ -27,12 +32,12 @@ public class PrimAlgorithm {
             predecessor[u] = NIL;
         }
         key[r] = 0;
-        PriorityQueue<Integer> queue = new PriorityQueue<>(G.getV());
+        LinkedList<Integer> queue = new LinkedList<>();
         for (int i = 0; i < G.getV(); i++) {
             queue.add(i);
         }
         while (!queue.isEmpty()) {
-            int u = queue.remove();
+            int u = extractMin(queue);
             for (int v : G.adj(u)) {
                 if (queue.contains(v) && G.getWeight(u, v) < key[v]) {
                     predecessor[v] = u;
@@ -40,30 +45,37 @@ public class PrimAlgorithm {
                 }
             }
         }
+        calculateWeight();
     }
 
-    public Iterable<Integer> path() {
-        LinkedList<Integer> path = new LinkedList<>();
-        float weight = 0;
-        boolean edge = false;
-        int sentinel = 0;
-        for (int i = 0; i < key.length;) {
-            for (int j = 0; j < predecessor.length; j++) {
-                if (predecessor[j] == i && !edge) {
-                    weight = key[j];
-                    edge = true;
-                    sentinel = j;
-                } else if (predecessor[j] == i && edge) {
-                    if (key[j] < key[sentinel]) {
-                        weight = key[sentinel];
-                        sentinel = j;
-                    }
-                }
-                path.add(sentinel);
-                i = sentinel;
+    public double getTotalWeight() {
+        return totalWeight;
+    }
+
+    public String toString() {
+        sb.append("Prim's algorithm\n");
+        sb.append(Arrays.toString(key));
+        sb.append("\nTotal weight: " + totalWeight + "\n");
+        return sb.toString();
+    }
+
+    private int extractMin(LinkedList<Integer> queue) {
+        double weight = INFINITY;
+        int vertex = 0;
+        for (int i = 0; i < key.length; i++) {
+            if (key[i] <= weight) {
+                weight = key[i];
+                vertex = i;
             }
-            edge = false;
         }
-        return path;
+        return queue.remove(vertex);
+    }
+
+    private void calculateWeight() {
+        for (int i = 0; i < key.length; i++) {
+            if (key[i] != INFINITY) {
+                totalWeight += key[i];
+            }
+        }
     }
 }
