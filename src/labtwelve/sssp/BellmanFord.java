@@ -2,37 +2,23 @@ package labtwelve.sssp;
 
 import labnine.graph.WeightedGraph;
 
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-
-public class Dijkstra {
+public class BellmanFord {
 
     private final int INFINITY = Integer.MAX_VALUE;
     private final int NIL = Integer.MIN_VALUE;
     private double totalWeight;
     private double[] distance;
     private int[] predecessor;
-    private LinkedList<Integer> S;
-    private LinkedList<Integer> Q;
 
-    public Dijkstra(WeightedGraph G, int source) {
+    public BellmanFord(WeightedGraph G, int source) {
         totalWeight = 0;
         distance = new double[G.getV()];
         predecessor = new int[G.getV()];
-        S = new LinkedList<>();
-        Q = new LinkedList<>();
-
         initializeSingleSource(G, source);
-        for (int i = 0; i < G.getV(); i++) {
-            Q.add(i);
+        for (WeightedGraph.Edge edge : G.sortedEdges()) {
+            relax(G, edge.getvOne(), edge.getvTwo());
         }
-        while(!Q.isEmpty()) {
-            int u = extractMin(Q);
-            S.add(u);
-            for (int v : G.adj(u)) {
-                relax(G, u, v);
-            }
-        }
+        negativeCycle(G);
         for (double aDistance : distance) {
             if (aDistance != INFINITY) {
                 totalWeight += aDistance;
@@ -57,22 +43,19 @@ public class Dijkstra {
         distance[source] = 0;
     }
 
-    private int extractMin(LinkedList<Integer> queue) {
-        double weight = INFINITY;
-        int vertex = 0;
-        for (int i = 0; i < distance.length; i++) {
-            if (distance[i] < weight) {
-                weight = distance[i];
-                vertex = i;
-            }
-        }
-        return queue.remove(vertex);
-    }
-
     private void relax(WeightedGraph G, int u, int v) {
         if (distance[v] > distance[u] + G.getWeight(u, v)) {
             distance[v] = distance[u] + G.getWeight(u, v);
             predecessor[v] = u;
         }
+    }
+
+    private boolean negativeCycle(WeightedGraph G) {
+        for (WeightedGraph.Edge edge : G.sortedEdges()) {
+            if (distance[edge.getvTwo()] > distance[edge.getvOne()] + edge.getWeight()) {
+                return false;
+            }
+        }
+        return true;
     }
 }

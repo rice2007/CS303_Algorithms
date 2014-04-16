@@ -1,13 +1,10 @@
 package labeleven.minspantree.prim;
 
 
-import labnine.graph.Graph;
 import labnine.graph.WeightedGraph;
 
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 
 public class PrimAlgorithm {
 
@@ -53,9 +50,8 @@ public class PrimAlgorithm {
     }
 
     public String toString() {
-        sb.append("Prim's algorithm\n");
         sb.append(Arrays.toString(key));
-        sb.append("\nTotal weight: " + totalWeight + "\n");
+        sb.append("\nTotal weight: ").append(totalWeight).append("\n");
         return sb.toString();
     }
 
@@ -72,9 +68,9 @@ public class PrimAlgorithm {
     }
 
     private void calculateWeight() {
-        for (int i = 0; i < key.length; i++) {
-            if (key[i] != INFINITY) {
-                totalWeight += key[i];
+        for (double aKey : key) {
+            if (aKey != INFINITY) {
+                totalWeight += aKey;
             }
         }
     }

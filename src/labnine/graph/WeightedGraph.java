@@ -10,7 +10,6 @@ public class WeightedGraph extends Graph {
 
     private double[][] weight;
     private LinkedList<Edge> vSet;
-    LinkedList<LinkedList<Double>> edges;
 
     public static class Edge extends HashMap<Integer, Double> {
 
@@ -42,7 +41,6 @@ public class WeightedGraph extends Graph {
         super(in);
         weight = new double[e][e];
         vSet = new LinkedList<>();
-        edges = new LinkedList<>();
         for (int i = 0; i < e; i++) {
             vSet.add(new Edge(0, 0, Double.MIN_VALUE));
         }
@@ -58,14 +56,6 @@ public class WeightedGraph extends Graph {
 
     public double getWeight(int u, int v) {
         return weight[u][v];
-    }
-
-    public void addEdge(Edge e) {
-        edges.get(e.getvOne()).set(e.getvTwo(), e.getWeight());
-    }
-
-    public LinkedList<Double> edges(int vertex) {
-        return edges.get(vertex);
     }
 
     public LinkedList<Edge> sortedEdges() {
